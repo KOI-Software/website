@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F2EFE9;
+}
+
+header {
+  background-color: #E84A27;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.employee-card,
+.goal,
+.name {
+  border: 1px solid #E84A27;
+  border-radius: 5px;
+  padding: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.contact {
+  border: 1px solid #E84A27;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100px;
+}
+
+.employee-card img {
+  float: right;
+  width: 180px;
+  height: 250px;
+  /* border-radius: 50%; */
+
+}
+
+.goal img {
+  float: right;
+  width: 350px;
+  /* height: 250px; */
+}
+
+.name p {
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 0;
+}
+
+.name p:first-child {
+  font-size: 30pt;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #E84A27;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.about,
+.up,
+.last {
+  padding: 20px;
+}
+
+.contact p {
+  color: gray;
+  text-align: center;
+}
+
+.contact p a {
+  text-decoration: none;
+  color: gray;
+}
+
+.contact p:first-child {
+  margin-top: 0;
+}
+
+.name img {
+  width: 200px;
+  height: 200px;
+  margin-left: 43%;
+  margin-top: 0;
+}
+
+main a ,main a:visited{
+  text-decoration: none;
+  color: gray;
+}
