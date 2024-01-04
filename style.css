@@ -13,7 +13,7 @@ body {
 .about{
     flex: 1 1 100%;
 }
-.about div,.team div{
+.about div{
   display: flex;
   flex-flow: row wrap;
   border: 1px solid #E84A27;
@@ -21,6 +21,15 @@ body {
   padding: 20px;
   height: 300px;
   margin: 20px 5px 20px 5px;
+}
+.team>div{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #E84A27;
+    border-radius: 5px;
+    padding: 20px;
+    height: 600px;
+    margin: 20px 5px 20px 5px;
 }
 .about h2{
     margin-left: 5px;
@@ -48,10 +57,80 @@ body {
 .team h2{
     margin-left: 5px;
 }
-.team div{
-    display: flex;
+.team div h3{
+    flex: 1 1 100%;
+    order: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.fili{
+    width: 300px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 400px;
+    order: 2;
+    margin-left: 15%;
 
 }
+.fili  p:first-child{
+    margin-top: 5px;
+    text-align: center;
+}
+.fili p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.fili img{
+    width: 150px;
+    margin-left: 25%;
+}
+.kach{
+    width: 300px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 400px;
+    order: 3;
+    margin-left: 5% ;
+}
+.kach p:first-child{
+    margin-top: 5px;
+    text-align: center;
+}
+.kach p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.kach img{
+    width: 150px;
+    margin-left: 25%; 
+}
+.osos{
+    width: 300px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 400px;
+    order: 4;
+    margin-left: 5% ;
+}
+.osos p:first-child{
+    margin-top: 5px;
+    text-align: center;
+}
+.osos p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.osos img{
+    width: 150px;
+    margin-left: 25%; 
+}
+
 
 header{
     display: flex;
