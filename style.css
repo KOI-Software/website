@@ -64,12 +64,12 @@ body {
     margin-top: 0;
 }
 .fili{
-    width: 300px;
+    width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 400px;
+    height: 500px;
     order: 2;
-    margin-left: 15%;
+    margin-left: 4%;
 
 }
 .fili  p:first-child{
@@ -83,14 +83,14 @@ body {
     margin-right: 5px;
 }
 .fili img{
-    width: 150px;
-    margin-left: 25%;
+    width: 250px;
+    margin-left: 18%;
 }
 .kach{
-    width: 300px;
+    width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 400px;
+    height: 500px;
     order: 3;
     margin-left: 5% ;
 }
@@ -105,14 +105,14 @@ body {
     margin-right: 5px;
 }
 .kach img{
-    width: 150px;
-    margin-left: 25%; 
+    width: 250px;
+    margin-left: 18%; 
 }
 .osos{
-    width: 300px;
+    width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 400px;
+    height: 500px;
     order: 4;
     margin-left: 5% ;
 }
@@ -127,8 +127,8 @@ body {
     margin-right: 5px;
 }
 .osos img{
-    width: 150px;
-    margin-left: 25%; 
+    width: 250px;
+    margin-left: 18%; 
 }
 
 
