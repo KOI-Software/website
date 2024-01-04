@@ -33,12 +33,13 @@ body {
 }
 .about div p{
     margin-top: 0;
-    flex: 1 1 ;
+    flex: 1 1 10%;
     order: 2;
 }
 .about div img{
     width: 350px;
     order: 3;
+    flex: 0 0 ;
     margin-right: 0;
 }
 .team{
