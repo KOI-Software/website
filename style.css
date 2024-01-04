@@ -86,10 +86,14 @@ ul li{
     display: none;
     padding-left: 0;
     margin-top: 5px;
-    background-color:rgba(232, 74, 39, 0.8);
+    background-color:rgba(232, 74, 39, 1);
+}
+.projectlist ul{
+    display: inline-block;
 }
 .projectlist li{
-    margin-top: 5px;
+    margin-top: 0;
+    display: inline-block;
 }
 .projects:hover .projectlist{
     display: block;
