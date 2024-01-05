@@ -19,7 +19,6 @@ body {
   border: 1px solid #E84A27;
   border-radius: 5px;
   padding: 20px;
-  height: 300px;
   margin: 20px 5px 20px 5px;
 }
 
@@ -67,7 +66,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     order: 2;
     margin-left: 4%;
 
@@ -90,7 +88,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     order: 3;
     margin-left: 5% ;
 }
@@ -112,7 +109,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     order: 4;
     margin-left: 5% ;
 }
@@ -141,7 +137,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     order: 6;
     padding-bottom: 10px;
     margin-left: 4%;
@@ -173,7 +168,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     padding-bottom: 10px;
     margin-left: 5%;
 }
@@ -204,7 +198,6 @@ body {
     width: 400px;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
     padding-bottom: 10px;
     margin-left: 5%;
 }
@@ -273,10 +266,6 @@ body {
 }
 
 header{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-flow: row wrap;
     flex: 1 1 100%;
     background-color: #E84A27;
     color: #fff;

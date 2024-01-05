@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.about{
+    width: 100%;
+}
+.about>div img{
+    width: 250px;
+}
+.about>div p{
+    text-align: left;
+}
+.team{
+    width: 100%;
+}
+.fili{
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.fili img{
+    width: 150px;
+    margin-left: 21%;
+}
+.kach{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.kach img{
+    width: 150px;
+    margin-left: 22%;
+}
+.osos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.osos img{
+    width: 150px;
+    margin-left: 21%;
+}
+.miron{
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.miron img{
+    width: 150px;
+    margin-left: 22%;
+}
+.korobov{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.korobov img{
+    width: 150px;
+    margin-left: 22%;
+}
+.zhuk{
+    margin-top: 10px;
+    margin-left: 0;
+}
+.zhuk img{
+    width: 150px;
+    margin-left: 22%;
+}
+.proj1 img{
+    width: 200px;
+    margin-left: 15%;
+}
+.contact{
+    width: 100%;
+}
