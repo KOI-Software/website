@@ -85,7 +85,7 @@ header a{
     width: 100%;
 }
 .projects h2{
-    text-align: center;
+    margin-left: 22%;
 }
 .proj1 img{
     width: 200px;
@@ -93,4 +93,7 @@ header a{
 }
 .contact{
     width: 100%;
+}
+.contact h2{
+    margin-left: 21%;
 }
