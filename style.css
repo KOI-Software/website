@@ -245,19 +245,33 @@ body {
     width: 100%;
     border: 1px solid #E84A27;
     border-radius: 5px; 
-    height: 500px;
+    /* height: 500px; */
     padding-bottom: 10px;
     /* margin-left: 5%; */
 }
 .proj1 p:first-child{
     text-align: center;
-}
-.proj1 a{
-    text-decoration: none;
-    color: black;
     font-weight: bold;
     font-size: 14pt;
 }
+.proj1 a{
+    text-decoration: underline;
+    color: black;
+}
+.proj1 img{
+    width: 250px;
+    margin-left: 41%;
+    margin-top: 20px;
+}
+.proj1 p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
 header{
     display: flex;
     align-items: flex-start;
@@ -278,4 +292,45 @@ a{
     text-decoration: none;
     color: white;
     padding-right: 10px;
+}
+.contact>div{
+    /* display: flex;
+    flex-flow: row wrap; */
+    border: 1px solid #E84A27;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1 1 100%;
+    margin: 20px 5px 20px 5px;
+}
+.contact{
+    flex: 1 1 100%;
+}
+.contact h2{
+    margin-left: 5px;
+}
+.contact>div p{
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.contact>div a{
+    text-decoration: underline;
+    color:rgb(88, 82, 82) ;
+}
+footer{
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap; */
+    flex: 1 1 100%;
+    background-color: #E84A27;
+    /* color: #fff; */
+    padding: 20px;
+    height: 60px;
+}
+footer p:first-child{
+    color: white;
+    text-align: center;
 }
