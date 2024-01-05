@@ -234,6 +234,9 @@ body {
 .projects{
     flex: 1 1 100%;
 }
+.projects h2{
+    flex: 1 1 100%;
+}
 .proj1{
     width: 100%;
     border: 1px solid #E84A27;
