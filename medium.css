@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+header{
+    width: 100%;
+}
+footer{
+    width: 100%;
+}
+.about,.team,.project,.contact{
+    width: 100%;
+}
+.about>div img{
+    margin-left: 10%;
+}
+.about h2{
+    margin-left: 40%;
+}
+.team h2{
+    margin-left: 32%;
+}
+.fili{
+    margin-bottom: 10px;
+}
+.kach{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.osos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.miron{
+    margin-bottom: 10px;
+}
+.korobov{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.zhuk{
+    margin-top: 10px;
+}
+.projects h2{
+    margin-left: 32%;
+}
+.proj1 img{
+    margin-left: 21%;
+}
+.contact h2{
+    margin-left: 30%;
+}
