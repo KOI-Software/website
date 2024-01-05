@@ -22,13 +22,13 @@ body {
   height: 300px;
   margin: 20px 5px 20px 5px;
 }
+
 .team>div{
     display: flex;
     flex-flow: row wrap;
     border: 1px solid #E84A27;
     border-radius: 5px;
     padding: 20px;
-    height: 600px;
     margin: 20px 5px 20px 5px;
 }
 .about h2{
@@ -60,8 +60,8 @@ body {
 .team div h3{
     flex: 1 1 100%;
     order: 1;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 .fili{
     width: 400px;
@@ -131,7 +131,133 @@ body {
     margin-left: 18%; 
 }
 
-
+.team>div h3:nth-child(5){
+    flex: 1 1 100%;
+    order: 5;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+.miron{
+    width: 400px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 500px;
+    order: 6;
+    padding-bottom: 10px;
+    margin-left: 4%;
+}
+.miron p:first-child{
+    margin-top: 5px;
+    text-align: center;
+}
+.miron p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.miron p:nth-child(4){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.miron img{
+    width: 250px;
+    margin-left: 18%;   
+}
+.korobov{
+    order: 7;
+    width: 400px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 500px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+.korobov p:first-child{
+    text-align: center;
+    margin-top: 5px;
+}
+.korobov img{
+    width: 250px;
+    margin-left: 18%;
+}
+.korobov p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.korobov p:nth-child(4){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.zhuk{
+    order: 8;
+    width: 400px;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 500px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+}
+.zhuk p:first-child{
+    text-align: center;
+    margin-top: 5px; 
+}
+.zhuk img{
+    width: 250px;
+    margin-left: 18%;
+}
+.zhuk p:nth-child(3){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.zhuk p:nth-child(4){
+    text-align: center;
+    color: rgb(88, 82, 82);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.projects>div{
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #E84A27;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 5px 20px 5px;
+}
+.projects{
+    flex: 1 1 100%;
+}
+.proj1{
+    width: 100%;
+    border: 1px solid #E84A27;
+    border-radius: 5px; 
+    height: 500px;
+    padding-bottom: 10px;
+    /* margin-left: 5%; */
+}
+.proj1 p:first-child{
+    text-align: center;
+}
+.proj1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+}
 header{
     display: flex;
     align-items: flex-start;
@@ -142,7 +268,6 @@ header{
     color: #fff;
     padding: 20px;
     height: 60px;
-
 }
 header h1 {
     flex:1 1 100%;
@@ -153,27 +278,4 @@ a{
     text-decoration: none;
     color: white;
     padding-right: 10px;
-}
-ul li{
-    list-style-type: none;
-}
-.projects{
-    margin-top: 0;
-    padding-left: 0;
-}
-.projects .projectlist{
-    display: none;
-    padding-left: 0;
-    margin-top: 5px;
-    background-color:rgba(232, 74, 39, 1);
-}
-.projectlist ul{
-    display: inline-block;
-}
-.projectlist li{
-    margin-top: 0;
-    display: inline-block;
-}
-.projects:hover .projectlist{
-    display: block;
 }
