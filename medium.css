@@ -13,41 +13,59 @@ footer{
     width: 100%;
 }
 .about>div img{
-    margin-left: 10%;
+    margin-left: 1%;
 }
 .about h2{
     margin-left: 40%;
 }
 .team h2{
-    margin-left: 32%;
+    margin-left: 30%;
 }
 .fili{
     margin-bottom: 10px;
+}
+.fili img{
+    margin-left: 13%;
 }
 .kach{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.kach img{
+    margin-left: 13%;
+}
 .osos{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.osos img{
+    margin-left: 13%;
+}
 .miron{
     margin-bottom: 10px;
+}
+.miron img{
+    margin-left: 13%;
 }
 .korobov{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.korobov img{
+    margin-left: 13%;
+}
 .zhuk{
     margin-top: 10px;
 }
+.zhuk img{
+    margin-left: 13%;
+}
 .projects h2{
-    margin-left: 32%;
+    margin-left: 30%;
 }
 .proj1 img{
-    margin-left: 21%;
+    margin-left: 15%;
 }
 .contact h2{
-    margin-left: 30%;
+    margin-left: 28%;
 }
