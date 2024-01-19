@@ -31,7 +31,7 @@ body {
     margin: 20px 5px 20px 5px;
 }
 .about h2{
-    margin-left: 5px;
+    margin-left: 15px;
 }
 .about div h3{
     margin-top: 0;
@@ -54,7 +54,7 @@ body {
     flex: 1 1 100%;
 }
 .team h2{
-    margin-left: 5px;
+    margin-left: 15px;
 }
 .team div h3{
     flex: 1 1 100%;
