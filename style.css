@@ -321,6 +321,7 @@ footer{
     /* color: #fff; */
     padding: 20px;
     height: 60px;
+    width: 100%;
 }
 footer p:first-child{
     color: white;
