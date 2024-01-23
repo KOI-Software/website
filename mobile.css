@@ -3,6 +3,7 @@
     align-items: center;
     flex-flow: column;
     height: 100%;
+
 }
 header{
     width: 100%;
@@ -147,7 +148,7 @@ header a{
 }
 .proj1 img{
     width: 250px;
-    flex: 1 1 100%;
+    /* flex: 1 1 100%; */
     margin-left: 9%;
 }
 .contact{

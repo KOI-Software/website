@@ -9,6 +9,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin: 0;
 }
 .about{
     flex: 1 1 100%;
@@ -239,7 +240,7 @@ body {
     flex: 1 1 100%;
 }
 .proj1{
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid #E84A27;
     border-radius: 5px; 
     /* height: 500px; */
@@ -256,7 +257,7 @@ body {
     color: black;
 }
 .proj1 img{
-    width: 250px;
+    width: 100px;
     margin-left: 41%;
     margin-top: 20px;
 }
