@@ -298,7 +298,9 @@ a{
     flex: 1 1 100%;
 }
 .contact h2{
+    flex:1 1 100%;
     margin-left: 5px;
+    width: 100%;
 }
 .contact>div p{
     text-align: center;
@@ -326,4 +328,7 @@ footer{
 footer p:first-child{
     color: white;
     text-align: center;
+}
+.proj1 img{
+    width: 100%;
 }
