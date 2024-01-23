@@ -177,6 +177,7 @@ body {
 }
 .korobov img{
     width: 250px;
+    height: 340px;
     margin-left: 18%;
 }
 .korobov p:nth-child(3){
