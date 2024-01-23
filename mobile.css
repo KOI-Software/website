@@ -31,7 +31,8 @@ header a{
     width: 100%;
 }
 .team h2{
-    margin-left: 24%;
+    text-align: center;
+    /* margin-left: 24%; */
 }
 .fili{
     display: flex;
