@@ -9,12 +9,12 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    margin-right: 0;
     width: 100%;
     position:sticky;
 }
 .about{
     flex: 1 1 100%;
+    width: 100%;
 }
 .about div{
   display: flex;
