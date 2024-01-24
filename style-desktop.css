@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   background-color: #F2EFE9;
 }
 
@@ -50,8 +50,8 @@ h2:nth-child(2) {
   border: 1px solid #E84A27;
   border-radius: 5px;
   padding: 20px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  /* margin-left: 0.5%;
+  margin-right: 0.5%; */
 }
 
 .about p {
@@ -76,8 +76,8 @@ h2:nth-child(4) {
   border: 1px solid #E84A27;
   border-radius: 5px;
   padding: 15px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  /* margin-left: 0.5%;
+  margin-right: 0.5%; */
 }
 
 .team h3:nth-child(1) {
@@ -233,8 +233,8 @@ h2:nth-child(6){
   border: 1px solid #E84A27;
   border-radius: 5px;
   padding: 20px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  /* margin-left: 0.5%;
+  margin-right: 0.5%; */
 }
 .proj1{
   border: 1px solid #E84A27;
@@ -272,8 +272,8 @@ h2:nth-child(8){
   border: 1px solid #E84A27;
   border-radius: 5px;
   padding: 15px;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  /* margin-left: 0.5%;
+  margin-right: 0.5%; */
 }
 .contact p{
   flex: 1 1 100%;
