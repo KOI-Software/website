@@ -1,71 +1,77 @@
-.container{
+.about {
+    display:flex;
+    flex-flow:column wrap;
+}
+h2:nth-child(2){
+    flex: 1 1 100%;
+    text-align: center;
+}
+.about img{
+    width: 80%;
+    margin-left: 10%;
+}
+h2:nth-child(4){
+    flex: 1 1 100%;
+    text-align: center;
+}
+.team{
     display: flex;
-    align-items: center;
-    flex-flow: column;
+    flex-flow: column wrap;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
-header{
-    width: 100%;
-}
-footer{
-    width: 100%;
-}
-.about,.team,.project,.contact{
-    width: 100%;
-}
-.about>div img{
-    margin-left: 1%;
-}
-.about h2{
-    margin-left: 40%;
-}
-.team h2{
-    margin-left: 30%;
+.team h3{
+    text-align: center;
+    margin-bottom: 10%;
 }
 .fili{
-    margin-bottom: 10px;
-}
-.fili img{
-    margin-left: 13%;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 10%;
 }
 .kach{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.kach img{
-    margin-left: 13%;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-left: 0;
 }
 .osos{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.osos img{
-    margin-left: 13%;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 0;
 }
 .miron{
-    margin-bottom: 10px;
-}
-.miron img{
-    margin-left: 13%;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-left: 0;
 }
 .korobov{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.korobov img{
-    margin-left: 13%;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-left: 0;
 }
 .zhuk{
-    margin-top: 10px;
+    flex: 1 1 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-left: 0;
 }
-.zhuk img{
-    margin-left: 13%;
+h2:nth-child(6){
+    text-align: center;
 }
-.projects h2{
-    margin-left: 30%;
+.projects{
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
 .proj1 img{
-    margin-left: 15%;
+    width: 55%;
+    margin-left: 22%;
 }
-.contact h2{
-    margin-left: 28%;
+h2:nth-child(8){
+    text-align: center;
 }
