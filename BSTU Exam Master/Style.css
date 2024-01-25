@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F2EFE9;
+  background-image: url();  /*transaprent backgroung for bstu logio needed*/
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -66,4 +68,130 @@ header nav a:hover{
   margin-left: 0.5%;
   margin-right: 0.5%;
   padding:0.5%;
+}
+h2:nth-child(4){
+  flex: 1 1 100%;
+  width: 100%;
+  margin-left: 1%;
+}
+.developers{
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding:0.5%;
+  flex: 1 1 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.developers a{
+  text-decoration: underline;
+  color: black;
+}
+.developers a:hover{
+  border: 1px solid black;
+  padding: 10px;
+}
+.developers h3:nth-child(1){
+  flex: 1 1 100%;
+  text-align: center;
+  /* margin-top: 2%; */
+  margin-bottom: 2%;
+}
+.fili{
+  /* flex:1 1 40%; */
+  width: 40%;
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  margin-left: 4.5%;
+}
+.fili p{
+  text-align: center;
+}
+.fili p:nth-child(3), .fili p:nth-child(4){
+  color: rgb(88, 82, 82);
+}
+.fili img{
+  width: 75%;
+  margin-left: 11%;
+}
+.kach{
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  width: 40%;
+  margin-left: 10%;
+}
+.kach p{
+  text-align: center;
+}
+.kach p:nth-child(3), .kach p:nth-child(4){
+  color: rgb(88, 82, 82) ;
+}
+.kach img{
+  width: 75%;
+  margin-left: 11%;
+}
+.developers h3:nth-child(4){
+  flex: 1 1 100%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.miron{
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 3%;
+}
+.miron p{
+  text-align: center;
+}
+.miron p:nth-child(3), .miron p:nth-child(4){
+  color:rgb(88, 82, 82) ;
+}
+.miron img{
+  width: 65%;
+  margin-left: 15%;
+}
+.kor{
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 2%;
+
+}
+.kor p{
+  text-align: center;
+}
+.kor p:nth-child(3), .kor p:nth-child(4){
+  color: rgb(88, 82, 82);
+}
+.kor img{
+  width: 65%;
+  margin-left: 15%;
+}
+.pol{
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: 2%;
+}
+.pol p{
+  text-align: center;
+}
+.pol p:nth-child(3), .pol p:nth-child(4){
+  color: rgb(88, 82, 82);
+}
+.pol img{
+  width: 65%;
+  margin-left: 15%;
+}
+footer{
+  flex: 1 1 100%;
+  width: 100%;
+  background-color: #580ff0;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
