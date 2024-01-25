@@ -22,9 +22,9 @@ header {
 
 header h1 {
   flex: 1 1 80%;
-  margin: 0;
-  padding-left: 30%;
-  border: 1px solid;
+  /* margin: 0; */
+  /* padding-left: 30%; */
+  /* border: 1px solid; */
 }
 
 header nav {
@@ -39,8 +39,31 @@ header nav a {
   text-align: center;
   display: inline-block;
   margin-bottom: 1%;
-  flex: 1 1 100%;
+  flex: 1 1 60%;
+  width: 60%;
   text-decoration: none;
   color: white;
+
   margin-right: 0;
+}
+header nav a:hover{
+  border: 1px solid;
+  /* text-decoration: underline; */
+}
+ h2:nth-child(2){
+  flex: 1 1 100%;
+  width: 100%;
+  margin-left: 1%;
+}
+.about{
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 100%;
+  width: 100%;
+  margin-left: 1%;
+  border: 1px solid #580ff0;
+  border-radius: 5px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding:0.5%;
 }
