@@ -78,30 +78,30 @@ header nav a:hover{
 }
 .about h3:nth-child(1){
   flex: 1 1 100%;
-  margin-bottom: 0;
+  width: 100%;
   order: 1;
+  text-align: center;
 }
-.about p:nth-child(3){
-  flex: 1 1 50%;
-  order:2;
+.about p:nth-child(2){
+  flex: 1 1 100%;
+  width: 100%;
+  order: 2;
 }
-.about img:nth-child(2){
+.about img:nth-child(3){
   order: 3;
-  flex: 1 1 1%;
-  width: 15%;
+  width: 25%;
+  margin-left: 37%;
 }
 .about h3:nth-child(4){
   flex: 1 1 100%;
+  width: 100%;
   order: 4;
+  text-align: center;
 }
-.about p:nth-child(6){
-  flex: 1 1 50%;
+.about p:nth-child(5){
   order: 5;
-}
-.about img:nth-child(5){
-  flex: 1 1 5%;
-  width: 5%;
-  order: 6;
+  flex: 1 1 100%;
+  width: 100%;
 }
 h2:nth-child(4){
   flex: 1 1 100%;
@@ -119,6 +119,7 @@ h2:nth-child(4){
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  padding-bottom: 2%;
 }
 .developers a{
   text-decoration: underline;
