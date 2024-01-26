@@ -37,6 +37,10 @@ header a {
   color: white;
   margin-right: 1%;
 }
+header a:hover{
+  border: 1px solid white;
+  padding: 2px;
+}
 
 h2:nth-child(2) {
   flex: 1 1 100%;
