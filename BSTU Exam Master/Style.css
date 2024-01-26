@@ -18,11 +18,17 @@ body {
 header {
   display: flex;
   flex-flow: row wrap;
-  background-color: #580ff0;
+  background-color:#580ff0;
+  opacity: 0.4;
   color: #fff;
   padding: 20px;
   flex: 1 1 100%;
   width: 100%;
+
+  /* z-index: 12; */
+}
+header br{
+  display: none;
 }
 
 header h1 {
@@ -33,6 +39,7 @@ header h1 {
 }
 
 header nav {
+  position: static;
   /* border: 1px solid; */
   flex: 1 1 10%;
   display: flex;
