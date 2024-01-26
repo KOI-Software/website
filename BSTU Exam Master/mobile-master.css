@@ -11,9 +11,31 @@ header{
     /* padding: 0; */
     padding: 5px;
     padding-right: 0px;
+    /* position: fixed; */
+}
+header nav{
+    padding: 0;
+}
+header nav a:hover{
+    border: none;
 }
 header br{
     display: inline;
+}
+header nav a:nth-child(1){
+    display: block;
+    position: relative;
+    margin-top: 35%;
+}
+header nav a:nth-child(n+2){
+    display: none;
+}
+header nav:hover a:nth-child(n+2){
+    margin-bottom: 10%;
+    display: block;
+}
+header nav:hover a:nth-child(2){
+    margin-top: 10%;
 }
 header h1{
     flex: 1 1 10%;

@@ -24,10 +24,11 @@ header {
   padding: 20px;
   flex: 1 1 100%;
   width: 100%;
-
-  /* z-index: 12; */
 }
 header br{
+  display: none;
+}
+header nav a:nth-child(1){
   display: none;
 }
 
@@ -237,4 +238,5 @@ footer{
   text-align: center;
   color: white;
   padding: 20px;
+  opacity: 0.4;
 }
