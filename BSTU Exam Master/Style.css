@@ -213,7 +213,7 @@ h2:nth-child(4){
 }
 .kor img{
   width: 65%;
-  margin-left: 15%;
+  margin-left: 18%;
 }
 .pol{
   border: 1px solid #580ff0;
@@ -232,6 +232,7 @@ h2:nth-child(4){
   margin-left: 15%;
 }
 footer{
+
   flex: 1 1 100%;
   width: 100%;
   background-color: #580ff0;
@@ -247,9 +248,14 @@ footer p{
 }
 footer p:nth-child(1){
   margin-bottom: 10px;
+  text-align: center;
 }
 footer a{
-  display: block;
+  display: inline;
   text-decoration: none;
   color: white;
+  padding: 5px;
+}
+footer a:hover{
+  border: 1px solid white;
 }

@@ -150,9 +150,8 @@ footer{
     padding: 5px;
     padding-right: 0px;
     margin-right: 0;
-    position: fixed;
     bottom: 0;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 footer p{
     display: block;
@@ -162,7 +161,8 @@ footer p:nth-child(1){
     margin-bottom: 10px;
 }
 footer a{
-    display: block;
+    display: inline;
+    padding: 5px;
     text-decoration: none;
     color: white;
 }
