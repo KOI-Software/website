@@ -12,6 +12,7 @@ header{
     padding: 5px;
     padding-right: 0px;
     /* position: fixed; */
+    top: 0;
 }
 header nav{
     padding: 0;
@@ -149,4 +150,19 @@ footer{
     padding: 5px;
     padding-right: 0px;
     margin-right: 0;
+    position: fixed;
+    bottom: 0;
+    opacity: 0.7;
+}
+footer p{
+    display: block;
+    margin: 10px 0 10px 0;
+}
+footer p:nth-child(1){
+    margin-bottom: 10px;
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    color: white;
 }
