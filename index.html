@@ -12,13 +12,22 @@
 
 <body>
     <div class="container">
-        <header>
-            <h1>KOISoftware</h1>
-            <a href="#about">О нас</a>
-            <a href="#team">Наша команда</a>
-            <a href="#projects">Наши проекты</a>
-            <a href="#contact">Наши контакты</a>
+        <header id="head">
+            <h1 id="menu-button">&#9776;<a></a>KOISoftware</h1>
         </header>
+        <div id="hamburger-menu">
+            <div id="menu-content">
+                <a href="#about">О нас</a>
+                <a href="#team">Наша команда</a>
+                <a href="#projects">Наши проекты</a>
+                <a href="#contact">Наши контакты</a>
+            </div>
+            <!-- <div id="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div> -->
+        </div>
         <h2 id="about">О нас</h2>
         <div class="about" id="about">
             <img src="BSTU Exam Master/Logo.jpg">
@@ -99,10 +108,17 @@
             <p>+375295500073</p>
         </div>
         <footer>
+            <p><a href="#head">В начало страницы &#8593;</a></p>
             <p>&copy; 2024 KOISoftware.All rights reserved.</p>
         </footer>
     </div>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scroll copy.js"></script>
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+  document.getElementById('hamburger-menu').classList.toggle('open');
+});
+</script>
 </html>
