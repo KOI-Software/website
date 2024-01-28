@@ -1,6 +1,15 @@
 .container{
     flex-flow: column wrap;
 }
+header nav{
+    display: none;
+}
+header span{
+    display: inline;
+}
+#hamburger-menu{
+    display: block;
+}
 .about{
     display: flex;
     flex-flow: column wrap;

@@ -13,20 +13,23 @@
 <body>
     <div class="container">
         <header id="head">
-            <h1 id="menu-button">&#9776;<a></a>KOISoftware</h1>
+            <h1 ><span id="menu-button">&#9776;</span><a></a>KOISoftware</h1>
+            <nav>
+
+                <a href="#about">О нас</a>
+                <a href="#team">Наша команда</a>
+                <a href="#projects">Наши проекты</a>
+                <a href="#contact">Наши контакты</a>
+            </nav>
         </header>
         <div id="hamburger-menu">
             <div id="menu-content">
+                <a id="back">&#8592;</a>
                 <a href="#about">О нас</a>
                 <a href="#team">Наша команда</a>
                 <a href="#projects">Наши проекты</a>
                 <a href="#contact">Наши контакты</a>
             </div>
-            <!-- <div id="menu-button">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div> -->
         </div>
         <h2 id="about">О нас</h2>
         <div class="about" id="about">
@@ -120,5 +123,10 @@
     document.getElementById('menu-button').addEventListener('click', function() {
   document.getElementById('hamburger-menu').classList.toggle('open');
 });
+</script>
+<script>
+    document.getElementById('back').addEventListener('click',function(){
+        document.getElementById('hamburger-menu').classList.toggle('close');
+    })
 </script>
 </html>
