@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  /* margin: 0;
-  padding: 0; */
+  padding: 0;
   background-color: #F2EFE9;
 }
 
@@ -12,8 +11,8 @@ body {
   justify-content: space-between;
   /* width: 100%; */
   /* position: sticky; */
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 header {
@@ -27,50 +26,20 @@ header {
   width: 100%;
   /* position: fixed; */
   /* top: -60px; */
+  margin: 0;
 }
 header span{
   display: none;
 }
 /*  code for hamburger menu  */
 
-#hamburger-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: -250px; /* Start offscreen */
-  width: 250px;
-  height: 100vh;
-  background-color: rgba(107, 90, 86, 0.4);
-  transition: left 0.3s ease;
-  z-index: 9999;
-}
-#menu-content a{
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  border: 1px solid black;
-}
-
-#menu-content {
-  padding: 20px;
-}
-
-#hamburger-menu.open {
-  left: 0; /* Slide menu in */
-}
-
-#hamburger-menu.close{
-  left: -250px;
-}
 
 /* end */
 
 header h1 {
   flex: 1 1 100%;
   margin: 0;
+
 }
 header nav{
   flex: 1 1 100%;
