@@ -14,7 +14,7 @@
 
     <div class="container">
         <header id="head">
-            <h1>KOISoftware</h1>
+            <h1><span class="menu-button">&#9776; </span>KOISoftware</h1>
                 <nav>
                     <a href="#about">О нас</a>
                     <a href="#team">Наша команда</a>
@@ -22,6 +22,15 @@
                     <a href="#contact">Наши контакты</a>
                 </nav>
         </header>
+        <div class="ham">
+            <div class="ham-content">
+                <a class="back">&#9776;</a>
+                <a href="#about">О нас</a>
+                <a href="#team">Наша команда</a>
+                <a href="#projects">Наши проекты</a>
+                <a href="#contact">Наши контакты</a>
+            </div>
+        </div>
         <h2 id="about">О нас</h2>
         <div class="about" id="about">
             <img src="BSTU Exam Master/Logo.jpg">
@@ -110,5 +119,17 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scroll copy.js"></script>
-<script></script>
+<script>
+    const button = document.querySelector('.menu-button');
+    const menu = document.querySelector('.ham');
+    button.addEventListener('click',function(){
+        menu.classList.toggle('active');
+        button.classList.toggle('hide-button')
+    })
+    const back = document.querySelector('.back');
+    back.addEventListener('click',function(){
+        menu.classList.remove('active')
+        button.classList.remove('hide-button')
+    })
+</script>
 </html>

@@ -13,9 +13,42 @@ header nav{
 header span{
     display: inline;
 }
-#hamburger-menu{
-    display: block;
+/* code for hamburger menu */
+.ham{
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start offscreen */
+    width: 250px;
+    height: 600px;
+    background-color:rgba(232, 74, 39, 0.6);
+    transition: left 0.3s ease;
+    z-index: 100;
 }
+.ham-content{
+    padding: 20px;
+    margin: 5px;
+}
+.ham-content a{
+    font-weight: 400;
+    font-size: 15pt;
+    text-decoration: none;
+    color:white ;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.active{
+    left: 0;
+}
+.hide-button{
+    display: none;
+}
+.back,.menu-button{
+    cursor: pointer;
+}
+/* end */
 .about{
     display: flex;
     flex-flow: column wrap;

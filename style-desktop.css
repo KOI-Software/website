@@ -32,7 +32,11 @@ header span{
   display: none;
 }
 /*  code for hamburger menu  */
-
+.ham{
+  visibility: hidden;
+  left: -250px;
+  position: fixed;
+}
 
 /* end */
 
