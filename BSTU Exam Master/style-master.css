@@ -84,7 +84,7 @@ h2:nth-child(3) a{
     height: 0;
     display: flex;
     visibility: hidden;
-    /* display: none; */
+    display: none;
     flex-flow: row wrap;
     left: -101%;
     position:relative;
@@ -126,6 +126,7 @@ h2:nth-child(5){
     display: flex;
     flex-flow: row wrap;
     position: relative;
+    /* display: none; */
 }
 .developers h3{
     flex: 1 1 100%;
@@ -173,6 +174,7 @@ h2:nth-child(5){
     border: 1px solid;
     margin-left: 5%;
     transition: right 0.3s ease;
+    display: none;
 }
 .kach p{
     text-align: center;
@@ -195,6 +197,7 @@ h2:nth-child(5){
     transition: left 0.3s ease;
     border: 1px solid;
     visibility: hidden;
+    display: none;
 }
 .miron p{
     text-align: center;
@@ -242,6 +245,7 @@ h2:nth-child(5){
     position: relative;
     transition: right 0.3s ease;
     visibility: hidden;
+    display: none;
 }
 .pol p{
     text-align: center;
@@ -259,8 +263,8 @@ footer{
     width: 100%;
     background-color: rgba(88, 15, 240, 1) ;
     margin-top: 1%;
-    /* bottom: -100%; */
-    /* position: static; */
+    bottom:0;    
+    position: relative;
 }
 footer p{
     text-align: center;
@@ -300,12 +304,14 @@ footer a:hover{
     width: 30%;
     height: auto;
     visibility: visible;
+    display: block;
 }
 .show-right-emp{
     right: 0;
     width: 30%;
     height: auto;
     visibility: visible;
+    display: block;
 
 }
 .show-kor{
