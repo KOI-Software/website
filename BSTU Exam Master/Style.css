@@ -15,17 +15,18 @@ body {
   padding: 0;
 }
 
+
 header {
   display: flex;
   flex-flow: row wrap;
-  background-color:#580ff0;
+  background-color:rgba(88, 15, 240, 1);
   opacity: 0.4;
   color: #fff;
   padding: 20px;
   flex: 1 1 100%;
   width: 100%;
 }
-header br{
+header span{
   display: none;
 }
 header nav a:nth-child(1){
@@ -63,7 +64,18 @@ header nav a:hover{
   border: 1px solid;
   /* text-decoration: underline; */
 }
- h2:nth-child(2){
+
+
+/* code for hamburger-menu here */
+.ham{
+  visibility: hidden;
+  left: -250px;
+  position: fixed;
+}
+/* end */
+
+
+ h2:nth-child(3){
   flex: 1 1 100%;
   width: 100%;
   margin-left: 1%;
@@ -111,7 +123,7 @@ header nav a:hover{
   flex: 1 1 100%;
   width: 100%;
 }
-h2:nth-child(4){
+h2:nth-child(5){
   flex: 1 1 100%;
   width: 100%;
   margin-left: 1%;

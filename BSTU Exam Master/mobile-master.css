@@ -1,7 +1,7 @@
 .container{
-    flex-flow: column wrap;
-    padding: 5px;
-    padding-right: 10px;
+    flex-flow: column wrap; 
+    margin: 0;  
+    padding: 10px;  
 }
 header{
     display: flex;
@@ -13,51 +13,47 @@ header{
     padding-right: 0px;
     /* position: fixed; */
     top: 0;
+    margin-left: -5px;
+    margin-right: -5px;
 }
-header nav{
-    padding: 0;
-}
-header nav a:hover{
-    border: none;
-}
-header br{
-    display: inline;
-}
-header nav a:nth-child(1){
-    display: block;
-    position: relative;
-    margin-top: 35%;
-}
-header nav a:nth-child(n+2){
-    display: none;
-}
-header nav:hover a:nth-child(n+2){
-    margin-bottom: 10%;
-    display: block;
-}
-header nav:hover a:nth-child(2){
-    margin-top: 10%;
-}
+
+
 header h1{
-    flex: 1 1 10%;
-    width: 10%;
-    margin-left: 3%;
-}
-header nav{
-    flex: 1 1 10%;
-    width: 10%;
-    /* display: none; */
-}
-header nav a{
-    padding: 0;
-    display: inline;
-    margin: 0;
-}
-h2:nth-child(2){
     flex: 1 1 100%;
     width: 100%;
     text-align: center;
-    margin-left: 0;
+}
+header span{
+    display: inline;
+    /* margin-left: -20px; */
+    cursor: pointer;
+}
+
+/* code for hamburger menu here */
+header nav{
+    display: none
+}
+.ham{
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start offscreen */
+    width: 250px;
+    height: 100vh;
+    background-color:rgba(88, 15, 240, 0.6);
+    transition: right 0.3s ease;
+    z-index: 9999;
+}
+.open{
+    left: 20px;
+}
+/* end */
+
+
+h2:nth-child(3){
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
 }
 .about{
     flex: 1 1 100%;
