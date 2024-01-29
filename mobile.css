@@ -21,7 +21,7 @@ header span{
     top: 0;
     left: -250px; /* Start offscreen */
     width: 250px;
-    height: 600px;
+    height: 100vh;
     background-color:rgba(232, 74, 39, 0.6);
     transition: left 0.3s ease;
     z-index: 100;
