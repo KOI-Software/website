@@ -24,11 +24,15 @@
         </header>
         <div class="ham">
             <div class="ham-content">
-                <a class="back">&#9776;</a>
                 <a href="#about">О нас</a>
                 <a href="#team">Наша команда</a>
                 <a href="#projects">Наши проекты</a>
                 <a href="#contact">Наши контакты</a>
+            </div>
+            <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
         </div>
         <h2 id="about">О нас</h2>
@@ -124,12 +128,13 @@
     const menu = document.querySelector('.ham');
     button.addEventListener('click',function(){
         menu.classList.toggle('active');
-        button.classList.toggle('hide-button')
+        button.classList.toggle('hide-button');
     })
-    const back = document.querySelector('.back');
+    const back = document.querySelector('.bars');
     back.addEventListener('click',function(){
-        menu.classList.remove('active')
-        button.classList.remove('hide-button')
+        menu.classList.remove('active');
+        button.classList.remove('hide-button');
     })
+
 </script>
 </html>
