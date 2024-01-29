@@ -1,17 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            text-align: center;
-            font-size: 24pt;
-        }
-    </style>
+    <link rel="stylesheet" href="style-master.css">
+    <title>BSTU Exam Master</title>
 </head>
+
 <body>
-    <h1>Technical works! Please wait untill all the fixes are finished!</h1>
+    <div class="container">
+        <header id="head">
+            <h1><span>&#9776; </span>BSTU Exam Master</h1>
+            <img src="BSTU_logo-removebg-preview.png">
+            <nav>
+                <a href="#about">О проекте</a>
+                <a href="#developers">Разработчики</a>
+                <a href="Documentation.docx" download>Документация</a>
+            </nav>
+        </header>
+        <div class="ham">
+            <div class="contentofmenu">
+                <a href="#about">О проекте</a>
+                <a href="#developers">Разработчики</a>
+                <a href="Documentation.docx" download>Документация</a>
+            </div>
+            <div class="bary">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <h2 id="about"><a class="trig1">&#9658; </a>О проекте</h2>
+        <div class="about">
+            <h3>Цель проекта</h3>
+            <p>Мы - группа студентов первого курса факультета информационных технологий Белорусского государственного
+                технологического университета.
+                И, будучи озабоченными предстоящей экзаменационной сессией, поставили перед собой цель: разработать
+                приложение , которое бы могло помочь
+                студентам подготовиться к одному из экзаменов.На данный момент приложение находится в альфа-тестировании
+                и
+                из всех представленных дисциплин доступна только "ОПИ". Остальные дисциплины находятся в разработке и
+                скоро будут
+                введены в эксплуатацию.
+            </p>
+            <img src="projectlogo1.png">
+            <h3>Реализация проекта</h3>
+            <p>Прокет был разработан <a href="https://manmadeeers.github.io/koi">нашей командой</a> в промежуток с
+                08.12.2023 по 25.12.2023. С 25.12.2023
+                по 29.12.2023
+                проходил стадию тестирования
+                и исправления ошибок. С 29.12.2023 готов к использованию.
+            </p>
+        </div>
+        <h2 id="developers">Разработчики</h2>
+        <div class="developers">
+            <h3><a class="trig2">&#9658; </a>Руководство проекта</h3>
+            <div class="fili">
+                <p><a href="https://github.com/Manmadeeers">Илья Филипюк</a></p>
+                <img src="Filipiuk.jpg">
+                <p>Позиция: Скрам-мастер</p>
+                <p>Ответственен за организацию работы команды и разработку документации и сайта проекта.</p>
+            </div>
+            <div class="kach">
+                <p><a href="https://github.com/Litvinas2006">Вацловас Качинскас</a></p>
+                <img src="Kachoficial.jpg">
+                <p>Позиция: Сениор-разработчик</p>
+                <p>Ответственен за контроль качества итогового продукта и разработку модулей взаимодействия с
+                    данными.
+                </p>
+            </div>
+            <h3><a class="trig3">&#9658; </a>Разработчики</h3>
+            <div class="miron">
+                <p><a href="https://github.com/mirnik13">Никита Мирон</a></p>
+                <img src="Miron.jpg">
+                <p>Позиция: Разработчик</p>
+                <p>Ответственен за разработку модуля "Подготовка к экзамену".</p>
+            </div>
+            <div class="kor">
+                <p><a href="https://github.com/Bigadabman">Егор Коробов</a></p>
+                <img
+                    src="no.jpg"><!-- employee pictures should be of one height( korobov is bigger than others)-->
+                <p>Позиция: Разработчик</p>
+                <p>Ответственен за разработку модуля "Проверка знаний".</p>
+            </div>
+            <div class="pol">
+                <p><a href="https://github.com/Pohmetolog">Полина Жуковская</a></p>
+                <img src="Zhukovskaya_ofi.jpg">
+                <p>Позиция: Тестировщик</p>
+                <p>Ответственна за тестирование функциональности продукта на всех этапах разработки</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 KOISoftware.All rights reserved.</p>
+        </footer>
+
+    </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scroll.js"></script>
+<script>
+    const about = document.querySelector('.about');
+    const about_trigger = document.querySelector('.trig1');
+    about_trigger.addEventListener('click',function(){
+        about.classList.toggle('show');
+        about_trigger.classList.toggle('triangle_rotation')
+    })
+</script>
+<script>
+    const hdtrig = document.querySelector('.trig2');
+    const fili = document.querySelector('.fili');
+    const kach = document.querySelector('.kach');
+    hdtrig.addEventListener('click',function(){
+        fili.classList.toggle('show-left');
+        hdtrig.classList.toggle('triangle_rotation');
+        kach.classList.toggle('show-right');
+    })
+</script>
+<script>
+    const emptrig = document.querySelector('.trig3');
+    const miron = document.querySelector('.miron');
+    const kor = document.querySelector('.kor');
+    const pol = document.querySelector('.pol');
+    emptrig.addEventListener('click',function(){
+        miron.classList.toggle('show-left-emp')
+        kor.classList.toggle('show-kor');
+        pol.classList.toggle('show-right-emp');
+    })
+</script>
+<script>
+    const back = document.querySelector('.show');
+    back.addEventListener('click',function(){
+        back.classList.remove('show');
+        fili.classList.remove('show-left');
+        kach.classList.remove('show-right');
+        miron.classList.remove('show-left-emp');
+        kor.classList.remove('show-kor');
+        pol.classList.remove('show-right-emp');
+    })
+</script>
 </html>

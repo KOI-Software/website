@@ -1,11 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #F2EFE9;
-  background-image: url();  /*transaprent backgroung for bstu logio needed*/
-  background-repeat: no-repeat;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Courier New", monospace;
 }
+
 
 .container {
   display: flex;
@@ -91,6 +89,7 @@ header nav a:hover{
   margin-left: 0.5%;
   margin-right: 0.5%;
   padding:0.5%;
+  
 }
 .about a{
   text-decoration: underline;
