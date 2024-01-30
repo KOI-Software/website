@@ -57,6 +57,8 @@ header nav a:hover{
 header span{
     display: none;
 }
+
+
 /* ham  */
 .ham{
     position: fixed;
@@ -66,6 +68,8 @@ header span{
     visibility: hidden;
 }
 /* end */
+
+
 h2:nth-child(3){
     flex: 1 1 100%;
     width: 100%;
@@ -78,19 +82,11 @@ h2:nth-child(3) a{
     margin-right: 1%;
 }
 .about{
-    /* flex: 1 1 100%; */
-    /* width: 100%; */
-    width: 0;
-    height: 0;
+    flex: 1 1 100%;
+    width: 100%;
     display: flex;
-    visibility: hidden;
-    display: none;
     flex-flow: row wrap;
-    left: -101%;
-    position:relative;
     padding: 10px;
-    /* z-index: 1; */
-    transition:left 0.3s ease;
     border: 1px solid;
 }
 .about h3:first-child{
@@ -122,11 +118,8 @@ h2:nth-child(5){
     flex: 1 1 100%;
     width: 100%;
     padding: 5px;
-    height: auto;
     display: flex;
     flex-flow: row wrap;
-    position: relative;
-    /* display: none; */
 }
 .developers h3{
     flex: 1 1 100%;
@@ -140,17 +133,9 @@ h2:nth-child(5){
     cursor: pointer;
 }
 .fili{
-    /* display: none; */
-    left: -100%;
-    width: 0;
-    height: 0;
-    visibility: hidden;
-    display: none;
-    /* width: 40%; */
-    position: relative;
+    width: 40%;
     border: 1px solid;
     margin-left: 7%;
-    transition: left 0.3s ease;
 }
 .fili p{
     text-align: center;
@@ -165,16 +150,9 @@ h2:nth-child(5){
     margin-left: 11%;
 }
 .kach{
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    right: -100%;
-    position: relative;
-    /* width: 40%; */
+    width: 40%;
     border: 1px solid;
     margin-left: 5%;
-    transition: right 0.3s ease;
-    display: none;
 }
 .kach p{
     text-align: center;
@@ -189,15 +167,9 @@ h2:nth-child(5){
     margin-left: 11%;
 }
 .miron{
-    /* width: 30%; */
-    width: 0;
-    height: 0;
-    left: -100%;
-    position: relative;
-    transition: left 0.3s ease;
+    width: 30%;
     border: 1px solid;
-    visibility: hidden;
-    display: none;
+    margin-left: 2%;
 }
 .miron p{
     text-align: center;
@@ -212,15 +184,8 @@ h2:nth-child(5){
 }
 .kor{
     width: 30%;
-    /* left: -100%; */
-    /* width: 0;
-    height: 0; */
-    transition: 0.3 ease;
-    border: 1px solid;
     margin-left: 3%;
-    display: none;
-    transition: 0.3s ease;
-    position: relative;
+    border: 1px solid;
 }
 .kor p{
     text-align: center;
@@ -236,16 +201,9 @@ h2:nth-child(5){
     /* display: none; */
 }
 .pol{
-    /* width: 30%; */
-    width: 0;
-    height: 0;
-    right: -100%;
+    width: 30%;
     border: 1px solid;
     margin-left: 3%;
-    position: relative;
-    transition: right 0.3s ease;
-    visibility: hidden;
-    display: none;
 }
 .pol p{
     text-align: center;
@@ -263,8 +221,6 @@ footer{
     width: 100%;
     background-color: rgba(88, 15, 240, 1) ;
     margin-top: 1%;
-    bottom:0;    
-    position: relative;
 }
 footer p{
     text-align: center;
@@ -278,47 +234,5 @@ footer a:hover{
 }
 
 /* javascript classes */
-.show{
-    left: 0;
-    display: flex;
-    height: auto;
-    width: 100%;
-    visibility: visible;
-}
-.show-left{
-    left: 0;
-    display: block;
-    height: auto;
-    width: 40%;
-    visibility: visible;
-}
-.show-right{
-    right: 0;
-    display: block;
-    height: auto;
-    width: 40%;
-    visibility: visible;
-}
-.show-left-emp{
-    left: 0;
-    width: 30%;
-    height: auto;
-    visibility: visible;
-    display: block;
-}
-.show-right-emp{
-    right: 0;
-    width: 30%;
-    height: auto;
-    visibility: visible;
-    display: block;
-
-}
-.show-kor{
-    display: block;
-}
-.triangle_rotation{
-    transform: rotate(90deg);
-}
 
 /* end */

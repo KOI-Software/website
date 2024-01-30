@@ -53,9 +53,9 @@
                 и исправления ошибок. С 29.12.2023 готов к использованию.
             </p>
         </div>
-        <h2 id="developers">Разработчики</h2>
+        <h2 id="developers"><a class="trig2">&#9658; </a>Разработчики</h2>
         <div class="developers">
-            <h3><a class="trig2">&#9658; </a>Руководство проекта</h3>
+            <h3>Руководство проекта</h3>
             <div class="fili">
                 <p><a href="https://github.com/Manmadeeers">Илья Филипюк</a></p>
                 <img src="Filipiuk.jpg">
@@ -100,43 +100,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scroll.js"></script>
 <script>
-    const about = document.querySelector('.about');
-    const about_trigger = document.querySelector('.trig1');
-    about_trigger.addEventListener('click',function(){
-        about.classList.toggle('show');
-        about_trigger.classList.toggle('triangle_rotation')
-    })
-</script>
-<script>
-    const hdtrig = document.querySelector('.trig2');
-    const fili = document.querySelector('.fili');
-    const kach = document.querySelector('.kach');
-    hdtrig.addEventListener('click',function(){
-        fili.classList.toggle('show-left');
-        hdtrig.classList.toggle('triangle_rotation');
-        kach.classList.toggle('show-right');
-    })
-</script>
-<script>
-    const emptrig = document.querySelector('.trig3');
-    const miron = document.querySelector('.miron');
-    const kor = document.querySelector('.kor');
-    const pol = document.querySelector('.pol');
-    emptrig.addEventListener('click',function(){
-        miron.classList.toggle('show-left-emp')
-        kor.classList.toggle('show-kor');
-        pol.classList.toggle('show-right-emp');
-    })
-</script>
-<script>
-    const back = document.querySelector('.show');
-    back.addEventListener('click',function(){
-        back.classList.remove('show');
-        fili.classList.remove('show-left');
-        kach.classList.remove('show-right');
-        miron.classList.remove('show-left-emp');
-        kor.classList.remove('show-kor');
-        pol.classList.remove('show-right-emp');
-    })
+    
 </script>
 </html>
