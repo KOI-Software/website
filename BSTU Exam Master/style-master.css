@@ -45,10 +45,39 @@ header h1{
 }
 header nav{
     /* flex: 1 1 10%; */
-    width: 60%;
+    width: 100%;
     /* border: 1px solid; */
     margin: 0;
     margin-left: 7%;
+    z-index: 3;
+    background-color:rgba(88, 15, 240, 1) ;
+}
+.languages{
+    display: inline-block;
+    /* margin-left: 1%; */
+    width: 40%;
+    position: relative;
+    left: -100%;
+    transition: left 0.3s ease;
+
+}
+.languages button{
+    display: inline-block;
+    width: 100px;
+    background-color: transparent;
+    color: #e4e3e3;
+    border: none;
+    margin-right: 2%;
+    border-left:1px #e4e3e3 solid;
+    border-right:1px #e4e3e3 solid ;
+    box-shadow: none;
+    padding: 5px;
+}
+.languages button:hover{
+    background-color:rgb(53, 4, 161) ;
+}
+.langchoise{
+    cursor: pointer;
 }
 header nav a{
     display: inline-block;
@@ -246,5 +275,8 @@ footer a:hover{
 /* javascript classes */
 .move{
     transform: rotate(1440deg);
+}
+.showlang{
+    left: 0;
 }
 /* end */

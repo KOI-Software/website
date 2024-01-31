@@ -20,6 +20,12 @@
                 <a href="#about">О проекте</a>
                 <a href="#developers">Разработчики</a>
                 <a href="Documentation.docx" download>Документация</a>
+                <a class="langchoise">Выбор языка</a>
+                <div class="languages">
+                    <button id="ru" data-lang="ru">Русский</button>
+                    <button id="by" data-lang="by">Беларуская</button>
+                    <button id="en" data-lang="en">English</button>
+                </div>
             </nav>
         </header>
         <div class="ham">
@@ -124,6 +130,14 @@
     })
 </script>
 <script>
-
+    const lang = document.querySelector('.langchoise');
+    const choise = document.querySelector('.languages')
+    lang.addEventListener('click',function(){
+        choise.classList.toggle('showlang');
+    })
+</script>
+<script>
+    const lgbuttons = document.querySelector('[data-lang]');
+    
 </script>
 </html>
