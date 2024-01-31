@@ -18,8 +18,9 @@ header h1{
 header span{
     display: inline;
     cursor: pointer;
-    margin-left: 10px;
-    margin-top: 5px;
+    font-size: 25pt;
+    margin-top: 4%;
+    margin-left: 2%;
 }
 header img{
     /* flex: 0 0 20%; */
