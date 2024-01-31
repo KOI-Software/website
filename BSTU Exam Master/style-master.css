@@ -19,7 +19,7 @@ header{
     flex: 1 1 100%;
     width: 100%;
     padding: 20px;
-    height: 80px;
+    /* height: auto; */
     background-color:rgba(88, 15, 240, 1) ;
     display: flex;
     flex-flow: row wrap;
@@ -27,23 +27,24 @@ header{
 }
 header img{
     /* flex: 1 1 20%; */
-    width: 5%;
+    width: 15%;
     margin-right: 3%;
    /* margin-top: 0.5%; */
 }
 header h1{
-    flex: 1 1 90%;
+    flex: 1 1 60%;
+    width: 60%;
     margin: 0;
     margin-top: 0.5%;
     padding: 0;
-    padding-bottom: -40px;
+    padding-top: 5%;
     /* border: 1px solid; */
 }
 header nav{
-    flex: 1 1 10%;
-    width: 100%;
-    margin: 0;
+    /* flex: 1 1 10%; */
+    width: 60%;
     /* border: 1px solid; */
+    margin: 0;
 }
 header nav a{
     display: inline-block;
@@ -240,6 +241,6 @@ footer a:hover{
 
 /* javascript classes */
 .move{
-    transform: rotate(720deg);
+    transform: rotate(1440deg);
 }
 /* end */
