@@ -1,55 +1,36 @@
+body{
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
 .container{
-    flex-flow: column wrap; 
-    margin: 0;  
-    padding: 10px;  
+    flex-flow: column wrap;
+    padding-left: -15px;
+    padding-right: 20px;
+    margin: 0;
+    position: static;
 }
 header{
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1 1 100%;
-    width: 100%;
-    /* padding: 0; */
-    padding: 5px;
-    padding-right: 0px;
-    /* position: fixed; */
-    top: 0;
-    margin-left: -5px;
-    margin-right: -5px;
+    /* flex: 1 1 100%; */
+    width: 95%;
+    margin: 0;
 }
-
-
+header nav{
+    display: none;
+}
 header h1{
-    flex: 1 1 100%;
-    width: 100%;
-    text-align: center;
+    flex: 1 1 60%;
+    margin-bottom: 0;
 }
-header span{
-    display: inline;
-    /* margin-left: -20px; */
+header img{
+    flex:1 1 30%;
+    margin: 0;
+}
+
+header h1 span{
+    display: block;
     cursor: pointer;
 }
-
-/* code for hamburger menu here */
-header nav{
-    display: none
-}
-.ham{
-    visibility: visible;
-    position: fixed;
-    top: 0;
-    left: -250px; /* Start offscreen */
-    width: 250px;
-    height: 100vh;
-    background-color:rgba(88, 15, 240, 0.6);
-    transition: right 0.3s ease;
-    z-index: 9999;
-}
-.open{
-    left: 20px;
-}
-/* end */
-
-
 h2:nth-child(3){
     flex: 1 1 100%;
     width: 100%;
@@ -58,107 +39,100 @@ h2:nth-child(3){
 .about{
     flex: 1 1 100%;
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    margin-left: 0;
-    margin-right: 0;
 }
-.about h3:nth-child(1){
-    flex: 1 1 100%;
-    width: 100%;
-    order: 1;
-    text-align: center;
-  }
-  .about p:nth-child(2){
-    flex: 1 1 100%;
-    width: 100%;
-    text-align: center;
-    order: 2;
-  }
-  .about img:nth-child(3){
-    order: 3;
+.about img{
     width: 50%;
-    margin-left: 23%;
-  }
-  .about h3:nth-child(4){
+}
+h2:nth-child(5){
     flex: 1 1 100%;
     width: 100%;
-    order: 4;
-    text-align: center;
-  }
-  .about p:nth-child(5){
-    order: 5;
-    flex: 1 1 100%;
-    width: 100%;
-    text-align: center;
-  }
-h2:nth-child(4){
-    flex: 1 1 100%;
-    width: 100%;
-    margin-left: 0;
     text-align: center;
 }
 .developers{
-    flex: 1 1 100%;
-    display: flex;
-    flex-flow: column wrap;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
+    flex:1 1 100%;
+    width: 100%;
 }
 .fili{
     flex: 1 1 100%;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 5%;
 }
 .kach{
     flex: 1 1 100%;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
+    margin-bottom: 5%;
 }
 .miron{
     flex: 1 1 100%;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 5%;
 }
 .kor{
     flex: 1 1 100%;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 5%;
 }
 .pol{
     flex: 1 1 100%;
     width: 100%;
-    margin-left: 0;
+    margin: 0;
     margin-bottom: 5%;
 }
 footer{
-    margin-top: 5%;
     flex: 1 1 100%;
-    width: 100%; 
-    /* padding: 0; */
-    padding: 5px;
-    padding-right: 0px;
-    margin-right: 0;
-    bottom: 0;
-    opacity: 0.4;
+    width: 106%;
+    /* margin: 0; */
+    /* margin-right: -10px;
+    margin-left: 5px; */
 }
 footer p{
-    display: block;
-    margin: 10px 0 10px 0;
+    text-align: center;
 }
-footer p:nth-child(1){
-    margin-bottom: 10px;
+/* ham */
+.ham{
+    visibility: visible;
+    z-index: 100;
+    background-color: rgba(88, 15, 240, 0.6);
+    transition: left 0.3s ease;
 }
-footer a{
-    display: inline;
-    padding: 5px;
+.contentofmenu{
+    margin: 10px;
+}
+.contentofmenu a{
+    display: inline-block;
     text-decoration: none;
-    color: white;
+    text-align: center;
+    color: #e4e3e3;
+    width: 100%;
+    margin-top: 10px;
 }
+.bary{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color:#e4e3e3;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+/* end */
+
+/* js classes */
+.open{
+    left: 0;
+}
+.hidesign{
+    display: none;
+}
+/* end */

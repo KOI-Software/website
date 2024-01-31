@@ -103,10 +103,15 @@ h2:nth-child(3) a{
     width: 20%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 .about a{
     text-decoration: underline;
     color: white;
+}
+.karp{
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 h2:nth-child(5){
     flex: 1 1 100%;
@@ -234,5 +239,7 @@ footer a:hover{
 }
 
 /* javascript classes */
-
+.move{
+    transform: rotate(720deg);
+}
 /* end */

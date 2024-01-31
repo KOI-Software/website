@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-master.css">
+    <link rel="stylesheet" href="mobile-master.css" media="(max-width: 480px)">
     <title>BSTU Exam Master</title>
 </head>
 
 <body>
     <div class="container">
         <header id="head">
-            <h1><span>&#9776; </span>BSTU Exam Master</h1>
+            <h1><span class="button">&#9776; </span>BSTU Exam Master</h1>
             <img src="BSTU_logo-removebg-preview.png">
             <nav>
                 <a href="#about">О проекте</a>
@@ -31,7 +32,7 @@
                 <div class="bar"></div>
             </div>
         </div>
-        <h2 id="about"><a class="trig1">&#9658; </a>О проекте</h2>
+        <h2 id="about">О проекте</h2>
         <div class="about">
             <h3>Цель проекта</h3>
             <p>Мы - группа студентов первого курса факультета информационных технологий Белорусского государственного
@@ -44,7 +45,7 @@
                 скоро будут
                 введены в эксплуатацию.
             </p>
-            <img src="projectlogo1.png">
+            <img src="projectlogo1.png" class="karp">
             <h3>Реализация проекта</h3>
             <p>Прокет был разработан <a href="https://manmadeeers.github.io/koi">нашей командой</a> в промежуток с
                 08.12.2023 по 25.12.2023. С 25.12.2023
@@ -53,7 +54,7 @@
                 и исправления ошибок. С 29.12.2023 готов к использованию.
             </p>
         </div>
-        <h2 id="developers"><a class="trig2">&#9658; </a>Разработчики</h2>
+        <h2 id="developers">Разработчики</h2>
         <div class="developers">
             <h3>Руководство проекта</h3>
             <div class="fili">
@@ -70,7 +71,7 @@
                     данными.
                 </p>
             </div>
-            <h3><a class="trig3">&#9658; </a>Разработчики</h3>
+            <h3>Разработчики</h3>
             <div class="miron">
                 <p><a href="https://github.com/mirnik13">Никита Мирон</a></p>
                 <img src="Miron.jpg">
@@ -100,6 +101,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scroll.js"></script>
 <script>
-    
+    const karp = document.querySelector('.karp');
+    karp.addEventListener('click',function(){
+        karp.classList.toggle('move');
+    })
+</script>
+<script>
+    const button = document.querySelector('.button');
+    const menu = document.querySelector('.ham');
+    button.addEventListener('click',function(){
+        menu.classList.toggle('open');
+        button.classList.toggle('hidesign');
+    })
+</script>
+<script>
+    const return_button = document.querySelector('.bary');
+    return_button.addEventListener('click',function(){
+        menu.classList.remove('open');
+        button.classList.remove('hidesign');
+    })
 </script>
 </html>
