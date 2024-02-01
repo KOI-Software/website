@@ -1,6 +1,6 @@
-/* body {
-
-} */
+body {
+    transition: 0.3s ease;
+}
 
 /* body themes */
 .dark-theme{
@@ -296,4 +296,5 @@ footer a:hover{
 .showlang{
     left: 0;
 }
+
 /* end */

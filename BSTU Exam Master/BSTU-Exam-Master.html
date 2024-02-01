@@ -34,12 +34,12 @@
                 <a href="#about">О проекте</a>
                 <a href="#developers">Разработчики</a>
                 <a href="Documentation.docx" download>Документация</a>
-                <a id="theme-toggle" class="theme-toggle">Переключить тему</a>
-                <a class="langchoise">Выбор языка</a>
-                <div class="languages">
-                    <button id="ru" data-lang="ru">Русский</button>
-                    <button id="by" data-lang="by">Беларуская</button>
-                    <button id="en" data-lang="en">English</button>
+                <a id="theme-toggle-ham" class="theme-toggle-ham">Переключить тему</a>
+                <a class="langchoise-ham" id="langchoise-ham">Выбор языка</a>
+                <div class="languages-ham">
+                    <button id="ru-ham" data-lang="ru">Русский</button>
+                    <button id="by-ham" data-lang="by">Беларуская</button>
+                    <button id="en-ham" data-lang="en">English</button>
                 </div>
             </div>
             <div class="bary">
@@ -170,6 +170,32 @@
             team.style.color = "#1a1a1a";
         }
 
+    })
+</script>
+<script>
+    const theme_ham = document.getElementById("theme-toggle-ham");
+    theme_ham.addEventListener('click',function(){
+        if(body.classList.contains('light-theme')){
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            bstu.style.color = "#e4e3e3";
+            team.style.color = "#e4e3e3";
+        }
+        else{
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            header.style.color = "#e4e3e3";
+            footer.style.color = "#e4e3e3";
+            bstu.style.color = "#1a1a1a";
+            team.style.color = "#1a1a1a";
+        }
+    })
+</script>
+<script>
+    const ham_lang = document.querySelector('.langchoise');
+    const langs_ham = document.querySelector('.languages-ham');
+    ham_lang.addEventListener('click',function(){
+        langs_ham.classList.toggle('showlang');
     })
 </script>
 </html>
