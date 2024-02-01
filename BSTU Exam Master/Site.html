@@ -10,7 +10,7 @@
     <title>BSTU Exam Master</title>
 </head>
 
-<body>
+<body class="dark-theme">
     <div class="container">
         <header id="head">
             <span class="button">&#9776; </span>
@@ -20,6 +20,7 @@
                 <a href="#about">О проекте</a>
                 <a href="#developers">Разработчики</a>
                 <a href="Documentation.docx" download>Документация</a>
+                <a id="theme-toggle" class="theme-toggle">Переключить тему</a>
                 <a class="langchoise">Выбор языка</a>
                 <div class="languages">
                     <button id="ru" data-lang="ru">Русский</button>
@@ -43,7 +44,7 @@
         <h2 id="about">О проекте</h2>
         <div class="about">
             <h3>Цель проекта</h3>
-            <p>Мы - группа студентов первого курса факультета информационных технологий <a href="https://belstu.by/">Белорусского государственного
+            <p>Мы - группа студентов первого курса факультета информационных технологий <a href="https://belstu.by/" id="bstulink">Белорусского государственного
                 технологического университета.</a>
                 И, будучи озабоченными предстоящей экзаменационной сессией, поставили перед собой цель: разработать
                 приложение , которое бы могло помочь
@@ -55,7 +56,7 @@
             </p>
             <img src="projectlogo1.png" class="karp">
             <h3>Реализация проекта</h3>
-            <p>Прокет был разработан <a href="https://manmadeeers.github.io/koi">нашей командой</a> в промежуток с
+            <p>Прокет был разработан <a href="https://manmadeeers.github.io/koi" id="team">нашей командой</a> в промежуток с
                 08.12.2023 по 25.12.2023. С 25.12.2023
                 по 29.12.2023
                 проходил стадию тестирования
@@ -100,7 +101,7 @@
                 <p>Ответственна за тестирование функциональности продукта на всех этапах разработки</p>
             </div>
         </div>
-        <footer>
+        <footer id="footer">
             <p>&copy; 2024 KOISoftware.All rights reserved.</p>
         </footer>
 
@@ -137,7 +138,28 @@
     })
 </script>
 <script>
-    const lgbuttons = document.querySelector('[data-lang]');
-    
+    const theme = document.getElementById("theme-toggle");
+    const body = document.body;
+    const header = document.getElementById("head");
+    const footer = document.getElementById("footer");
+    const bstu = document.getElementById("bstulink");
+    const team = document.getElementById("team");
+    theme.addEventListener('click',function(){
+        if(body.classList.contains('light-theme')){
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            bstu.style.color = "#e4e3e3";
+            team.style.color = "#e4e3e3";
+        }
+        else{
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            header.style.color = "#e4e3e3";
+            footer.style.color = "#e4e3e3";
+            bstu.style.color = "#1a1a1a";
+            team.style.color = "#1a1a1a";
+        }
+
+    })
 </script>
 </html>
