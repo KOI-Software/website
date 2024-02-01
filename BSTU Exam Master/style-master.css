@@ -1,6 +1,8 @@
 /* body {
 
 } */
+
+/* body themes */
 .dark-theme{
     background-color: #1a1a1a;
     color: #e4e3e3;
@@ -14,6 +16,7 @@
     opacity: 1;
 }
 
+/* end */
 
 .container{
   display: flex;
