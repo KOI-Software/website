@@ -45,18 +45,18 @@ header span {
     cursor: pointer;
 }
 .languages-ham{
-    width: 100%;
+    width: 40%;
     /* margin-left: 25%; */
     /* border: 1px solid; */
     padding-left: 40%;
     left: -100%;
     position: relative;
-    z-index: 999;
+
     transition: left 0.3s ease;
 }
 .languages-ham button{
-    display: block;
-    margin-bottom: 10%;
+    display: inline-block;
+    margin-bottom: 30%;
     background-color: transparent;
     color: #e4e3e3;
     border: none;
@@ -71,10 +71,10 @@ header span {
     background-color:rgb(24, 2, 75);
 }
 .languages-ham button:first-child{
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .languages-ham button:nth-child(2){
-    margin-left: -5%;
+    margin-left: -11%;
 }
 .languages-ham button:nth-child(3){
     margin-left: 1%;
@@ -206,7 +206,7 @@ footer p {
 .hidesign {
     visibility: hidden  ;
 }
-.showlang{
+/* .showlang{
     left: 0;
-}
+} */
 /* end */
