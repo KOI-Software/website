@@ -10,7 +10,7 @@
     <title>KOISoftware</title>
 </head>
 
-<body>
+<body class="light-theme">
 
     <div class="container">
         <header id="head">
@@ -21,6 +21,13 @@
                     <a href="#projects">Наши проекты</a>
                     <a href="#contact">Наши контакты</a>
                     <a id="theme-toggle">Переключить тему</a>
+                    <a id="choise">Выбор языка</a>
+                    <div class="langs">
+                        <button>Русский</button>
+                        <button>Беларуская</button>
+                        <button>English</button>
+                        <button>Deutsch</button>
+                    </div>
                 </nav>
         </header>
         <div class="ham">
@@ -115,7 +122,7 @@
             <p><a href="">GitHub</a></p>
             <p>+375295500073</p>
         </div>
-        <footer>
+        <footer id="foot">
             <p><a href="#head">В начало страницы &#8593;</a></p>
             <p>&copy; 2024 KOISoftware.All rights reserved.</p>
         </footer>
@@ -136,6 +143,31 @@
         menu.classList.remove('active');
         button.classList.remove('hide-button');
     })
+</script>
+<script>
+    const choise = document.getElementById("choise");
+    const langs = document.querySelector('.langs');
+    choise.addEventListener('click',function(){
+        langs.classList.toggle('show');
+    })
+</script>
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    const head = document.getElementById("head");
+    const foot = document.getElementById("foot");
 
+    toggle.addEventListener('click',function(){
+        if(body.classList.contains("light-theme")){
+            body.classList.remove("light-theme");
+            body.classList.add("dark-theme");
+            head.style.color = "#e0dbd1";
+            foot.style.color = "#e0dbd1"
+        }
+        else{
+            body.classList.remove("dark-theme");
+            body.classList.add("light-theme");
+        }
+    });
 </script>
 </html>

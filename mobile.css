@@ -61,7 +61,7 @@ header span{
     left: 0;
 }
 .hide-button{
-    display: none;
+    visibility: hidden;
 }
 .back,.menu-button{
     cursor: pointer;
