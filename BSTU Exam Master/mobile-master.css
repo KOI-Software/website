@@ -64,8 +64,6 @@ header span {
     border-right:1px #e4e3e3 solid ;
     box-shadow: none;
     cursor: pointer;
-    /* width: 100%; */
-    /* margin-right: 1%; */
 }
 .languages-ham button:hover{
     background-color:rgb(24, 2, 75);
