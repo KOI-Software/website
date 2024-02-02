@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-master.css">
+    <link rel="stylesheet" href="mobile-master.css" media="(max-width: 480px)">
+    <link rel="stylesheet" href="medium-master.css" media="(min-width: 481px) and (max-width: 768px)">
+    <title>BSTU Exam Master</title>
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <header id="head">
+            <span class="button">&#9776; </span>
+            <img src="BSTU_logo-removebg-preview.png">
+            <h1>BSTU Exam Master</h1>
+            <nav>
+                <a href="#about">About a project</a>
+                <a href="#developers">Developers</a>
+                <a href="Documentation.docx" download>Documentation</a>
+                <a id="theme-toggle" class="theme-toggle">Switch theme</a>
+                <a class="langchoise">Choise of a language</a>
+                <div class="languages">
+                    <button id="ru" data-lang="ru"><a href="BSTU-Exam-Master.html">Русский</a></button>
+                    <button id="by" data-lang="by"><a href="BSTU-Exam-Master-by.html">Беларуская</a></button>
+                    <button id="en" data-lang="en">English</button>
+                </div>
+            </nav>
+        </header>
+        <div class="ham">
+            <div class="contentofmenu">
+                <a href="#about">About a project</a>
+                <a href="#developers">Developers</a>
+                <!-- an english version needed -->
+                <a href="Documentation.docx" download>Documentation</a>
+                <a id="theme-toggle-ham" class="theme-toggle-ham">Switch theme</a>
+                <a class="langchoise-ham" id="langchoise-ham">Choise of a language</a>
+                <div class="languages-ham">
+                    <button id="ru-ham" data-lang="ru"><a href="BSTU-Exam-Master.html">Русский</a></button>
+                    <button id="by-ham" data-lang="by"><a href="BSTU-Exam-Master-by.html">Беларуская</a></button>
+                    <button id="en-ham" data-lang="en"><a href="BSTU-Exam-Master-en.html">English</a></button>
+                </div>
+            </div>
+            <div class="bary">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <h2 id="about">About a project</h2>
+        <div class="about">
+            <h3>Our goal</h3>
+            <p>We are a group of first-year students of the Faculty of information technologies of the <a
+                    href="https://belstu.by/" id="bstulink">Belarussian State Technological University.</a>
+                We were extremely woried about the up-coming first exam session and set a goal for ourselves: to develop
+                an application that
+                could help another freshmen to prepare themselves better. At the moment the application is in an
+                alpha-test and from all of the represented
+                disciplines only "The basics of program engineering" is available. The rest of the options are at the
+                development stage and will soon be ready for beeng released.
+            </p>
+            <img src="projectlogo1.png" class="karp">
+            <h3>Realisation</h3>
+            <p>This project has been developed<a href="https://manmadeeers.github.io/koi" id="team">by our team </a>
+                from
+                08.12.2023 to 25.12.2023. And from 25.12.2023
+                to 29.12.2023
+                was in a stage of testing and bugg fixing.And since 29.12.2023 is ready for usage.
+            </p>
+        </div>
+        <h2 id="developers">Our developers</h2>
+        <div class="developers">
+            <h3>The head of the project</h3>
+            <div class="fili">
+                <p><a href="https://github.com/Manmadeeers" class="link-profile">Ilya Filipiuk</a></p>
+                <img src="Filipiuk.jpg">
+                <p>Position: Scram-master</p>
+                <p> Responsible for the organisation of a team work and development of project documentation and
+                    websiteF</p>
+            </div>
+            <div class="kach">
+                <p><a href="https://github.com/Litvinas2006" class="link-profile">Vaclovas Kachinskas</a></p>
+                <img src="Kachoficial.jpg">
+                <p>Position: Senior-developer</p>
+                <p> Responsible for the cross check of the final versions of the product and for the development of data
+                    processing modules.
+                </p>
+            </div>
+            <h3>Our developers</h3>
+            <div class="miron">
+                <p><a href="https://github.com/mirnik13" class="link-profile">Nikita Miron</a></p>
+                <img src="Miron.jpg">
+                <p>Position: Developer</p>
+                <p> Responsible for development of a "Preparation" module.</p>
+            </div>
+            <div class="kor">
+                <p><a href="https://github.com/Bigadabman" class="link-profile">Egor Korobov</a></p>
+                <img src="no.jpg"><!-- employee pictures should be of one height-->
+                <p>Position: Developer</p>
+                <p> Responsible for development of a "Knowledge check" module.</p>
+            </div>
+            <div class="pol">
+                <p><a href="https://github.com/Pohmetolog" class="link-profile">Polina Zhikovskaya</a></p>
+                <img src="Zhukovskaya_ofi.jpg">
+                <p>Position: Tester</p>
+                <p> Responsible for function testing of all the versions of a product.</p>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>&copy; 2024 KOISoftware.All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scroll.js"></script>
+<script>
+    const karp = document.querySelector('.karp');
+    karp.addEventListener('click', function () {
+        karp.classList.toggle('move');
+    })
+</script>
+<script>
+    const button = document.querySelector('.button');
+    const menu = document.querySelector('.ham');
+    button.addEventListener('click', function () {
+        menu.classList.toggle('open');
+        button.classList.toggle('hidesign');
+    })
+</script>
+<script>
+    const return_button = document.querySelector('.bary');
+    return_button.addEventListener('click', function () {
+        menu.classList.remove('open');
+        button.classList.remove('hidesign');
+    })
+</script>
+<script>
+    const lang = document.querySelector('.langchoise');
+    const choise = document.querySelector('.languages')
+    lang.addEventListener('click', function () {
+        choise.classList.toggle('showlang');
+    })
+</script>
+
+<script>
+    const rus = document.getElementById("ru");
+    const eng = document.getElementById("en");
+    const bel = document.getElementById("by");
+    const html = document.html;
+    rus.addEventListener('click', function () {
+        if (html.classList.contains("bel") || html.classList.contains("eng")) {
+
+        }
+    })
+</script>
+
+<script>
+    const theme = document.getElementById("theme-toggle");
+    const body = document.body;
+    const header = document.getElementById("head");
+    const footer = document.getElementById("footer");
+    const bstu = document.getElementById("bstulink");
+    const team = document.getElementById("team");
+    theme.addEventListener('click', function () {
+        if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            bstu.style.color = "#e4e3e3";
+            team.style.color = "#e4e3e3";
+        }
+        else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            header.style.color = "#e4e3e3";
+            footer.style.color = "#e4e3e3";
+            bstu.style.color = "#1a1a1a";
+            team.style.color = "#1a1a1a";
+        }
+
+    })
+</script>
+<script>
+    const theme_ham = document.getElementById("theme-toggle-ham");
+    const link_profiles = document.querySelectorAll('.link-profile');
+    theme_ham.addEventListener('click', function () {
+        if (body.classList.contains('light-theme')) {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            bstu.style.color = "#e4e3e3";
+            team.style.color = "#e4e3e3";
+        }
+        else {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            header.style.color = "#e4e3e3";
+            footer.style.color = "#e4e3e3";
+            bstu.style.color = "#1a1a1a";
+            team.style.color = "#1a1a1a";
+            link_profiles.foreach(function (element) {
+                element.style.color = "#1a1a1a";
+            });
+        }
+    })
+</script>
+<script>
+    const button_for_ham = document.querySelector('.langchoise-ham');
+    const langs_for_ham = document.querySelector('.languages-ham');
+    button_for_ham.addEventListener('click', function () {
+        langs_for_ham.classList.toggle('open');
+    })
+</script>
+
+</html>
