@@ -57,6 +57,31 @@ header span{
     text-align: center;
     margin-bottom: 10px;
 }
+#choise-ham{
+    cursor: pointer;
+}
+.langs-ham{
+    position: relative;
+    left: -100%;
+    padding-left: 30%;
+    transition: left 0.3s ease;
+}
+.langs-ham button{
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 12pt;
+    color: white;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+.langs-ham button:nth-child(2){
+    margin-left: -8%;
+}
+.langs-ham button:nth-child(3){
+    margin-left: 2%;
+}
 .active{
     left: 0;
 }
