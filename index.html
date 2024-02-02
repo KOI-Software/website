@@ -179,10 +179,27 @@
     });
 </script>
 <script>
+    const theme_ham = document.getElementById("switch-ham");
+    theme_ham.addEventListener('click',function(){
+        if(body.classList.contains("light-theme")){
+            body.classList.remove("light-theme");
+            body.classList.add("dark-theme");
+            head.style.color = "#e0dbd1";
+            foot.style.color = "#e0dbd1"
+            menu.style.color = "#e0dbd1";
+        }
+        else{
+            body.classList.remove("dark-theme");
+            body.classList.add("light-theme");
+        }
+    })
+</script>
+<script>
     const lang_ham = document.getElementById("choise-ham");
     const chosi_ham = document.querySelector('.langs-ham');
     lang_ham.addEventListener('click',function(){
         chosi_ham.classList.toggle('active');
     })
 </script>
+
 </html>
