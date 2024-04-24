@@ -272,6 +272,52 @@ h2:nth-child(5){
     width: 65%;
     margin-left:17% ;
 }
+
+.downloadAPP{
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 1px solid;
+}
+.downloadAPP h3{
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.downloadAPP div{
+    flex: 1 1 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 1px solid;
+}
+.downloadAPP a{
+    border-radius: 10px;
+    background-color:rgba(88, 15, 240, 1) ;
+    color: #e4e3e3;
+    font-size: large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+.downloadAPP .exe{
+    margin-right: 1%;
+}
+.downloadAPP .zip{
+    margin-left: 1%;
+}
+
 footer{
     flex: 1 1 100%;
     width: 100%;
