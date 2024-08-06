@@ -18,19 +18,28 @@ function updatePageContent(translations) {
 }
 
 function switchLanguage(lang) {
-    document.cookie = `selectedLanguage=${lang}; SameSite=Lax; Max-Age=2678400; path=/`;
+    setCookie('selectedLanguage', lang)
     loadTranslations(lang).then(translations => {
         document.documentElement.lang = lang;
         updatePageContent(translations);
     });
 }
 
-function getCookie(name) {
-    const value = "; " + document.cookie;
-    const parts = value.split("; " + name + "=");
-    if (parts.length === 2) return parts.pop().split(";").shift();
+
+function setCookie(name, value, samesite="Lax", maxage=2678400, path='/'){
+    document.cookie = `${name}=${value}; SameSite=${samesite}; Max-Age=${maxage}; path=${path}`;
 }
 
+function getCookie(name) {
+    let cookieArr = document.cookie.split(";");
+    for(let i = 0; i < cookieArr.length; i++) {
+        let cookiePair = cookieArr[i].split("=");
+        if(name == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+    return null;
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     const selectedLanguage = getCookie('selectedLanguage');
     if (selectedLanguage) {
