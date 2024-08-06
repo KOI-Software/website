@@ -13,7 +13,6 @@ function updatePageContent(translations) {
     var elements = document.querySelectorAll('[data-lang]');
     elements.forEach(function(element) {
         element.textContent = translations[element.dataset.lang];
-        console.log(element);
         
     });
 }
