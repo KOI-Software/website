@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
     <link rel="stylesheet" href="css/medium.css" media="(min-width: 481px) and (max-width: 768px)">
     <title>KOISoftware</title>
-    <link rel="icon" href="../website/assets/images/Logo.jpg">
-    <link rel="apple-touch-icon" href="../website/assets/images/Logo.jpg">
 </head>
 
 <body class="light-theme">
@@ -17,29 +15,29 @@
     <div class="container">
         <header id="head">
             <h1><span class="menu-button">&#9776; </span>KOISoftware</h1>
-                <nav class="">
-                    <a href="#about" data-lang="about">About us</a>
-                    <a href="#team">Our team</a>
-                    <a href="#projects">Our projects</a>
-                    <a href="#contact">Our contact data</a>
-                    <a id="theme-toggle">color theme switch</a>
-                    <a id="choise">Choose a language</a>
+                <nav>
+                    <a href="#about">О нас</a>
+                    <a href="#team">Наша команда</a>
+                    <a href="#projects">Наши проекты</a>
+                    <a href="#contact">Наши контакты</a>
+                    <a id="theme-toggle">Переключить тему</a>
+                    <a id="choise">Выбор языка</a>
                     <div class="langs">
-                        <button onclick="switchLanguage('ru')"><a>Русский</a></button>
+                        <button><a href="index.html">Русский</a></button>
                         <button><a href="index-by.html">Беларуская</a></button>
-                        <button><a onclick="switchLanguage('en')">English</a></button>
+                        <button><a href="index-en.html">English</a></button>
                         <button><a href="index-de.html">Deutsch</a></button>
                     </div>
                 </nav>
         </header>
         <div class="ham">
             <div class="ham-content">
-                <a href="#about">About us</a>
-                <a href="#team">Our team</a>
-                <a href="#projects">Our projects</a>
-                <a href="#contact">Out contact data</a>
-                <a id="switch-ham">Color theme switch</a>
-                <a id="choise-ham">Choose a language</a>
+                <a href="#about">О нас</a>
+                <a href="#team">Наша команда</a>
+                <a href="#projects">Наши проекты</a>
+                <a href="#contact">Наши контакты</a>
+                <a id="switch-ham">Переключить тему</a>
+                <a id="choise-ham">Выбор языка</a>
                 <div class="langs-ham">
                     <button>Русский</button>
                     <button>Беларуская</button>
@@ -130,7 +128,7 @@
         <div class="contact">
             <p><a href="mailto:koisoftware.of@gmail.com" target="_blank">koisoftware.of@gmail.com</a></p>
             <p><a href="">GitHub</a></p>
-             <p><a href="tel:+375295500073">+375295500073</a></p>
+            <p><a href="tel:+375295500073">+375295500073</a></p>
         </div>
         <footer id="foot">
             <p><a href="#head">В начало страницы &#8593;</a></p>
@@ -141,7 +139,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/scroll copy.js"></script>
-<script src="lang/changeLang.js"></script>
 <script>
     const button = document.querySelector('.menu-button');
     const menu = document.querySelector('.ham');
