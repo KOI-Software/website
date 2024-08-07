@@ -4,3 +4,8 @@
 [main](https://koi-software.github.io/website/index.html)
 
 * [ ]  ПЕРЕДЕЛАТЬ САЙТ
+* [ ]  ДОБАВИТЬ ПОДЕРЖКУ ЯЗЫКОВ
+
+  ![logo](assets/images/Logo.jpg)
+
+***by KOISoftware***
