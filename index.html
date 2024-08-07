@@ -22,7 +22,7 @@
                     <a href="#team">Our team</a>
                     <a href="#projects">Our projects</a>
                     <a href="#contact">Our contact data</a>
-                    <a id="theme-toggle">color theme switch</a>
+                    <a id="theme-toggle" onclick="clickTheme()">color theme switch</a>
                     <a id="choise">Choose a language</a>
                     <div class="langs">
                         <button onclick="switchLanguage('ru')"><a>Русский</a></button>
@@ -38,7 +38,7 @@
                 <a href="#team">Our team</a>
                 <a href="#projects">Our projects</a>
                 <a href="#contact">Out contact data</a>
-                <a id="switch-ham">Color theme switch</a>
+                <a id="switch-ham" onclick="clickTheme()">Color theme switch</a>
                 <a id="choise-ham">Choose a language</a>
                 <div class="langs-ham">
                     <button>Русский</button>
@@ -163,39 +163,52 @@
     })
 </script>
 <script>
-    const toggle = document.getElementById("theme-toggle");
-    const body = document.body;
-    const head = document.getElementById("head");
-    const foot = document.getElementById("foot");
+    function setCookie(name, value, maxage=2678400, samesite="Lax", path='/'){
+        document.cookie = `${name}=${value}; SameSite=${samesite}; Max-Age=${maxage}; path=${path}`;
+    }
+    function getCookie(name) {
+        let cookieArr = document.cookie.split(";");
+        for(let i = 0; i < cookieArr.length; i++) {
+            let cookiePair = cookieArr[i].split("=");
+            if(name.trim() == cookiePair[0]) {
+            return decodeURIComponent(cookiePair[1]);
+    }
+        return null;
+    }
+    }
 
-    toggle.addEventListener('click',function(){
-        if(body.classList.contains("light-theme")){
-            body.classList.remove("light-theme");
-            body.classList.add("dark-theme");
-            head.style.color = "#e0dbd1";
-            foot.style.color = "#e0dbd1"
+    function changeTheme(theme){
+        if(theme == "light-theme" && !document.body.classList.contains("light-theme")){
+            document.body.classList.remove("dark-theme");
+            document.body.classList.add("light-theme");
+        } else if(theme == "dark-theme" && !document.body.classList.contains("dark-theme")){
+            document.body.classList.remove("light-theme");
+            document.body.classList.add("dark-theme");
         }
-        else{
-            body.classList.remove("dark-theme");
-            body.classList.add("light-theme");
+        setCookie('theme', theme);
         }
-    });
-</script>
-<script>
-    const theme_ham = document.getElementById("switch-ham");
-    theme_ham.addEventListener('click',function(){
-        if(body.classList.contains("light-theme")){
-            body.classList.remove("light-theme");
-            body.classList.add("dark-theme");
-            head.style.color = "#e0dbd1";
-            foot.style.color = "#e0dbd1"
-            menu.style.color = "#e0dbd1";
+
+        function clickTheme(){
+            if(document.body.classList.contains("light-theme")){
+                changeTheme("dark-theme");
+            }
+            else{
+            changeTheme("light-theme");
+            }
         }
-        else{
-            body.classList.remove("dark-theme");
-            body.classList.add("light-theme");
+        
+    document.addEventListener('DOMContentLoaded', (event) => {
+        let currentTheme = getCookie('theme');
+        if (!currentTheme){
+            if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+                currentTheme = "dark-theme";
+            }
+            else{
+                currentTheme = "light-theme";
+            }
         }
-    })
+        changeTheme(currentTheme);
+        });
 </script>
 <script>
     const lang_ham = document.getElementById("choise-ham");
