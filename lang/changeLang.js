@@ -25,6 +25,14 @@ function switchLanguage(lang) {
     });
 }
 
+function getPreferredLanguage() {
+    const languages = navigator.languages || navigator.language.split(',');
+    const preferredLanguage = languages.find(lang => /^en/.test(lang) || /^ru/.test(lang) || /^be/.test(lang) || /^de/.test(lang));
+    if (preferredLanguage) {
+        return preferredLanguage.slice(0, 2);
+    }
+    return null;
+}
 
 function setCookie(name, value, samesite="Lax", maxage=2678400, path='/'){
     document.cookie = `${name}=${value}; SameSite=${samesite}; Max-Age=${maxage}; path=${path}`;
@@ -40,9 +48,15 @@ function getCookie(name) {
     }
     return null;
 }
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const selectedLanguage = getCookie('selectedLanguage');
-    if (selectedLanguage) {
+    const preferredLanguage = getPreferredLanguage();
+    
+
+    if (preferredLanguage && !selectedLanguage) {
+        switchLanguage(preferredLanguage);
+    } else if (selectedLanguage) {
         switchLanguage(selectedLanguage);
     }
 });
