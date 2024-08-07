@@ -34,7 +34,7 @@ function getPreferredLanguage() {
     return null;
 }
 
-function setCookie(name, value, samesite="Lax", maxage=2678400, path='/'){
+function setCookie(name, value, maxage=2678400, samesite="Lax", path='/'){
     document.cookie = `${name}=${value}; SameSite=${samesite}; Max-Age=${maxage}; path=${path}`;
 }
 
