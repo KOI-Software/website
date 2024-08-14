@@ -4,202 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="images/weblogo.svg">
     <link rel="stylesheet" href="css/style-desktop.css">
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
-    <link rel="stylesheet" href="css/medium.css" media="(min-width: 481px) and (max-width: 768px)">
     <title>KOISoftware</title>
 </head>
 
-<body class="light-theme">
-
+<body>
     <div class="container">
-        <header id="head">
-            <h1><span class="menu-button">&#9776; </span>KOISoftware</h1>
-                <nav>
-                    <a href="#about">О нас</a>
-                    <a href="#team">Наша команда</a>
-                    <a href="#projects">Наши проекты</a>
-                    <a href="#contact">Наши контакты</a>
-                    <a id="theme-toggle">Переключить тему</a>
-                    <a id="choise">Выбор языка</a>
-                    <div class="langs">
-                        <button><a href="index.html">Русский</a></button>
-                        <button><a href="index-by.html">Беларуская</a></button>
-                        <button><a href="index-en.html">English</a></button>
-                        <button><a href="index-de.html">Deutsch</a></button>
-                    </div>
-                </nav>
+        <header id="header">
+            <img src="images/weblogo.svg">
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Our projects</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Support us</a></li>
+            </ul>
         </header>
-        <div class="ham">
-            <div class="ham-content">
-                <a href="#about">О нас</a>
-                <a href="#team">Наша команда</a>
-                <a href="#projects">Наши проекты</a>
-                <a href="#contact">Наши контакты</a>
-                <a id="switch-ham">Переключить тему</a>
-                <a id="choise-ham">Выбор языка</a>
-                <div class="langs-ham">
-                    <button>Русский</button>
-                    <button>Беларуская</button>
-                    <button>English</button>
-                    <button>Deutsch</button>
-                </div>
-            </div>
-            <div class="bars">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+        <div class="intro">
+            <span class="company-name">KOI<br>Software</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1082" height="559" viewBox="0 0 1082 559" fill="none"
+                id="intro-right">
+                <path d="M309.581 0H1082V559H0L309.581 0Z" fill="#E85D00" />
+                <text transform="translate(93.96 69.96)">
+                    <tspan x="200" y="200" fill="white" font-size="64px">Applications for people</tspan>
+                </text>
+            </svg>
         </div>
-        <h2 id="about">О нас</h2>
-        <div class="about" id="about">
-            <img src="BSTU Exam Master/Logo.jpg">
-            <p>Мы - компания KOISoftware,созданная учащимися ГУО "Лицей №1 г.Минска" Вацловасом Качинскасом, Ильёй
-                Филипюком и Ильёй Ососом в 2022 году
-                и названная в честь япоснских карпов кои. Мы специализируемя на разработке программного обеспечения и
-                полноценных приложений , направленных
-                на принесение максимальной пользы оществу. Ныне наша команда состоит из студентов факультета
-                информационных технологий Белорусского государственного
-                технологического университета и занимается разработкой приложений для помощи студентам в различных
-                сферах обучения. </p>
-        </div>
-        <h2 id="team">Наша команда</h2>
-        <div class="team">
-            <h3>Наши основатели</h3>
-            <div class="fili">
-                <p>Илья Филипюк</p>
-                <img src="BSTU Exam Master/Filipiuk.jpg">
-                <p>Филипюк Илья - один из основателей и руководитель компании.Принимает участие в разработке проектов на
-                    равне с разработчиками , ответсвенен
-                    за организацию работы команды.</p>
+        <section class="info">
+            <div class="company-info">
+                <img src="images/weblogo.svg">
+                <p>KOISoftware - is a young IT-company
+                    founded in 2021 and based in Minsk, Belarus</p>
             </div>
-            <div class="kach">
-                <p>Вацловас Качинскас</p>
-                <img src="BSTU Exam Master/Kachoficial.jpg">
-                <p>Вацловас Качинскас - сооснователь компании. Занимает должность заместителя , но учавствует в
-                    разработке проектов вместе с работниками и ответственен
-                    за контроль технической составляющей итогового продукта.</p>
+            <div class="dev-products">
+                <p>Our specialization is development and distribution of
+                    opensource free applications which provide effective
+                    and simple IT-solutions to everyday problems</p>
+                <img src="images/develop-svgrepo-com.svg">
             </div>
-            <div class="osos">
-                <p>Илья Осос</p>
-                <img src="BSTU Exam Master/Osos.jpg">
-                <p>Илья Осос - сооснователь компании. Во многом определил вектор дальнейшего развития организации. На
-                    данный момент не имеет отношения к компании, но навсегда вписан
-                    в её исорию. </p>
+            <div class="team">
+                <img src="images/team-svgrepo-com(1).svg">
+                <p>Our team consists of students of the Faculty of 
+                    Information Technologies of Belarussian State 
+                    Technological Univercity. </p>
             </div>
-            <h3>Наши сотрудники</h3>
-            <div class="miron">
-                <p>Никита Мирон</p>
-                <img src="BSTU Exam Master/Miron.jpg">
-                <p>Позиция: Junior-developer</p>
-                <p>Никита стал частью команды KOISoftware в 2023 году, будучи студентом факультета информационных
-                    технологий Белорусского государственного технологического университета.</p>
+            <div class="money">
+                <p>All the applications and software are completely free of
+                    charge. But we are always happy and incredibly grateful
+                    for any financial asistance  </p>
+                <img src="images/money-svgrepo-com(1).svg">
             </div>
-            <div class="korobov">
-                <p>Егор Коробов</p>
-                <img src="no">
-                <p>Позиция: Senior-developer</p>
-                <p>Text here</p>
+        </section>
+        <footer>
+            <div class="logos">
+                <p id="footer-logo">KOISoftware</p>
+                <img src="images/telegram-svgrepo-com.svg" alt="">
+                <img src="images/github-142-svgrepo-com.svg" alt="">
+                <img src="images/instagram-svgrepo-com.svg" alt="">
+                <img src="images/youtube-svgrepo-com(1).svg" alt="">
             </div>
-            <div class="zhuk">
-                <p>Полина Жуковская</p>
-                <img src="BSTU Exam Master/Zhukovskaya_ofi.jpg">
-                <p>Позиция: Тестировщик</p>
-                <p>Text here</p>
+            <div class="text-info">
+                <span>&copy 2021-2024 KOISoftware</span>
+                <a href="">Privacy policy</a>
+                <a href="">Cookie usage</a>
+                <a href="">Support us</a>
             </div>
-        </div>
-        <h2 id="projects">Наши проекты</h2>
-        <div class="projects">
-            <div class="proj1">
-                <h3>BSTU Exam Master</h3>
-                <img src="BSTU Exam Master/projectlogo1.png">
-                <p>BSTU Exam Master - проект, направленный на помощь студентам факультета информационных технологий
-                    Белорусского государственного технологического университета при подготовке
-                    к первой экзаменационной сессии. В приложении представлены все дисциплины , по которым студенты
-                    сдают экзамены и предложено два варианта использования: "Подготовка к экзамену",
-                    где студенту будет предложено решить один случайно выбраный билет, либо "Тестирование знаний", где
-                    студенту будут даваться разные вопросы из разных билетов, дабы оценить уровень общей
-                    подготовки. Приложение имеет открытый исходный код и доступно для всех желающих. Более подробно
-                    ознакомиться с данным проектом можно по ссылке:<br><a href="BSTU Exam Master/BSTU-Exam-Master.html">BSTU Exam
-                        Master</a></br> </p>
-            </div>
-        </div>
-        <h2 id="contact">Наши контакты</h2>
-        <div class="contact">
-            <p><a href="mailto:koisoftware.of@gmail.com" target="_blank">koisoftware.of@gmail.com</a></p>
-            <p><a href="">GitHub</a></p>
-            <p><a href="tel:+375295500073">+375295500073</a></p>
-        </div>
-        <footer id="foot">
-            <p><a href="#head">В начало страницы &#8593;</a></p>
-            <p>&copy; 2024 KOISoftware.All rights reserved.</p>
         </footer>
     </div>
-
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scroll copy.js"></script>
-<script>
-    const button = document.querySelector('.menu-button');
-    const menu = document.querySelector('.ham');
-    button.addEventListener('click',function(){
-        menu.classList.toggle('active');
-        button.classList.toggle('hide-button');
-    })
-    const back = document.querySelector('.bars');
-    back.addEventListener('click',function(){
-        menu.classList.remove('active');
-        button.classList.remove('hide-button');
-    })
-</script>
-<script>
-    const choise = document.getElementById("choise");
-    const langs = document.querySelector('.langs');
-    choise.addEventListener('click',function(){
-        langs.classList.toggle('show');
-    })
-</script>
-<script>
-    const toggle = document.getElementById("theme-toggle");
-    const body = document.body;
-    const head = document.getElementById("head");
-    const foot = document.getElementById("foot");
-
-    toggle.addEventListener('click',function(){
-        if(body.classList.contains("light-theme")){
-            body.classList.remove("light-theme");
-            body.classList.add("dark-theme");
-            head.style.color = "#e0dbd1";
-            foot.style.color = "#e0dbd1"
-        }
-        else{
-            body.classList.remove("dark-theme");
-            body.classList.add("light-theme");
-        }
-    });
-</script>
-<script>
-    const theme_ham = document.getElementById("switch-ham");
-    theme_ham.addEventListener('click',function(){
-        if(body.classList.contains("light-theme")){
-            body.classList.remove("light-theme");
-            body.classList.add("dark-theme");
-            head.style.color = "#e0dbd1";
-            foot.style.color = "#e0dbd1"
-            menu.style.color = "#e0dbd1";
-        }
-        else{
-            body.classList.remove("dark-theme");
-            body.classList.add("light-theme");
-        }
-    })
-</script>
-<script>
-    const lang_ham = document.getElementById("choise-ham");
-    const chosi_ham = document.querySelector('.langs-ham');
-    lang_ham.addEventListener('click',function(){
-        chosi_ham.classList.toggle('active');
-    })
-</script>
+<script src="js/header.js"></script>
 
 </html>
