@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="images/weblogo.svg">
     <link rel="stylesheet" href="css/style-desktop.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
     <title>KOISoftware</title>
 </head>
 
 <body>
     <div class="container">
         <header id="header">
+            <button id="menu-button"></button>
+            <nav class="mobile-menu" id="mobile-menu">
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Our projects</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Support us</a></li>
+                </ul>
+            </nav>
             <img src="images/weblogo.svg">
-            <ul>
+            <ul id="desktop-menu">
                 <li><a href="">About us</a></li>
                 <li><a href="">Our projects</a></li>
                 <li><a href="">Contact us</a></li>
@@ -29,6 +39,7 @@
                     <tspan x="200" y="200" fill="white" font-size="64px">Applications for people</tspan>
                 </text>
             </svg>
+            <div class="mobile-moto">Applications for people</div>
         </div>
         <section class="info">
             <div class="company-info">
@@ -73,5 +84,5 @@
     </div>
 </body>
 <script src="js/header.js"></script>
-
+<script src="js/buttons.js"></script>
 </html>

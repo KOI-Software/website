@@ -13,7 +13,15 @@ body {
   font-family: Sansation, sans-serif;
   padding: 0;
 }
-
+#menu-button{
+  display: none;
+}
+.mobile-menu{
+  display: none;
+}
+.mobile-moto{
+  display: none;
+}
 .container {
   display: flex;
   flex-flow: row wrap;
