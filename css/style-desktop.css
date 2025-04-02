@@ -87,7 +87,7 @@ header ul li a:hover {
   z-index: 0;
 } */
 .company-name {
-  z-index: 100;
+  /* z-index: 100; */
   /* display: inline; */
   font-size: 96px;
   margin-top: 8%;
